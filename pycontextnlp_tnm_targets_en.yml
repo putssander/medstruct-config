@@ -1,0 +1,161 @@
+Comments: ''
+Direction: ''
+Lex: concept_tumor
+Regex: '(mass|tumor|nodu|haard|carcino|laesie|letsel|\brip\b|\bRIP\b|ruimte(-)?innemend process|maligniteit|verdicht|indicht)'
+Type: 'snomedct:108369006'
+---
+Comments: ''
+Direction: ''
+Lex: concept_tumor_t4
+Regex: '(mass|tumor|haard|carcino|laesie|letsel|\brip\b|\bRIP\b|ruimte(-)?innemend process|maligniteit|verdicht|indicht)'
+Type: 'snomedct:108369006_t4'
+---
+Comments: ''
+Direction: ''
+Lex: concept_tumor_blacklist
+Regex: 'klier\s{0,1}massa'
+Type: 'snomedct:108369006_blacklist'
+---
+Comments: ''
+Direction: ''
+Lex: concept_involvement
+Regex: 'aan(ge)?tast|destructie|(door|in)(ge)?groei|uitbreiding|betrokken|invade|invasie|induratie'
+Type: 'snomedct:248448006'
+---
+Comments: ''
+Direction: ''
+Lex: lymph_nodes
+Regex: 'lymf|nodes|klier'
+Type: 'snomedct:59441001'
+---
+Comments: ''
+Direction: ''
+Lex: main_bronchus
+Regex: '(centrale|hoofd|hilair).*bronch'
+Type: 'snomedct:102297006'
+---
+Comments: ''
+Direction: ''
+Lex: visceral_pleura
+Regex: 'pleura|longvlies'
+Type: 'snomedct:81623005'
+---
+Comments: ''
+Direction: ''
+Lex: atelectasis
+Regex: 'atelect|samengevallen'
+Type: 'snomedct:46621007'
+---
+Comments: ''
+Direction: ''
+Lex: obstructive_pneumonitis
+Regex: 'obstructieve pneumoni|infect.*verander'
+Type: 'snomedct:205237003'
+---
+Comments: ''
+Direction: ''
+Lex: chest_wall
+Regex: 'borst.*wan|thorax.*wan|rib|costa'
+Type: 'snomedct:78904004'
+---
+Comments: ''
+Direction: ''
+Lex: nervus_phrenicus
+Regex: 'nervus.*(phrenicus|frenicus)'
+Type: 'snomedct:50230006'
+---
+Comments: ''
+Direction: ''
+Lex: parietale_pericard
+Regex: 'pericard'
+Type: 'snomedct:76848001'
+---
+Comments: ''
+Direction: ''
+Lex: satellite_nodule
+Regex: 'satelliet.*'
+Type: 'snomedct:396408009'
+---
+Comments: ''
+Direction: ''
+Lex: diafragm
+Regex: 'diafragm|middenrif'
+Type: 'snomedct:5798000'
+---
+Comments: ''
+Direction: ''
+Lex: mediastinum
+Regex: 'mediast'
+Type: 'snomedct:72410000'
+---
+Comments: ''
+Direction: ''
+Lex: heart
+Regex: 'hart|epicard'
+Type: 'snomedct:80891009'
+---
+Comments: ''
+Direction: ''
+Lex: great_vessels
+Regex: 'grote vaten|centrale vaten|aorta|vena cava|vcs|VCS'
+Type: 'snomedct:3711007'
+---
+Comments: ''
+Direction: ''
+Lex: trachea
+Regex: 'trachea|luchtpijp'
+Type: 'snomedct:44567001'
+---
+Comments: ''
+Direction: ''
+Lex: recurrent_laryngeal_nerve
+Regex: 'recurrens'
+Type: 'snomedct:731050007'
+---
+Comments: ''
+Direction: ''
+Lex: oesophagus
+Regex: 'oesophagus|slok|oesofagus|oesof|oesoph'
+Type: 'snomedct:32849002'
+---
+Comments: ''
+Direction: ''
+Lex: vertebral_body
+Regex: 'wervel|vertebra'
+Type: 'snomedct:3572006'
+---
+Comments: ''
+Direction: ''
+Lex: carina
+Regex: 'carina'
+Type: 'snomedct:28700002'
+---
+Comments: ''
+Direction: ''
+Lex: superior_lobe_right
+Regex: 'rechter\s{0,1}bovenkwab|boven\s{0,1}kwab rechts|\bRBK\b|\bRBL\b'
+Type: 'snomedct:362898004'
+---
+Comments: ''
+Direction: ''
+Lex: superior_lobe_right
+Regex: 'linker\s{0,1}bovenkwab|boven\s{0,1}kwab links|\bLBK\b|\bLBL\b'
+Type: 'snomedct:44714003'
+---
+Comments: ''
+Direction: ''
+Lex: middle_lobe
+Regex: 'midde.*(kwab|lob)|\bMK\b|\bML\b'
+Type: 'snomedct:72481006'
+---
+Comments: ''
+Direction: ''
+Lex: inferior_lobe_right
+Regex: 'rechter\s{0,1}onder\s{0,1}(kwab|lob)|onder\s{0,1}(kwab|lob) recht|\bROK\b|\bROL\b'
+Type: 'snomedct:266005'
+---
+Comments: ''
+Direction: ''
+Lex: inferior_lobe_left
+Regex: 'linker\s{0,1}onder\s{0,1}(kwab|lob)|onder\s{0,1}(kwab|lob) link|\bLOK\b|\bLOL\b'
+Type: 'snomedct:41224006'
