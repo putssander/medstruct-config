@@ -5,10 +5,12 @@ conceptTumorBlackList = Arrays.asList("snomedct:108369006_blacklist");
 conceptLymphNodes: "snomedct:59441001";
 conceptsT1:
 
-conceptsT2:
+conceptsInvolvementT2:
   - "snomedct:102297006"
   - "snomedct:81623005"
   - "snomedct:46621007"
+conceptsPresentT2:
+
 conceptsT3:
   - "snomedct:205237003"
   - "snomedct:78904004"
