@@ -1,32 +1,52 @@
 conceptInvolvement: "snomedct:248448006";
 conceptTumor: "snomedct:108369006";
 conceptTumorT4: "snomedct:108369006_t4"
-conceptTumorBlackList = Arrays.asList("snomedct:108369006_blacklist");
+conceptTumorBlackList: Arrays.asList("snomedct:108369006_blacklist");
 conceptLymphNodes: "snomedct:59441001";
+
 conceptsT1:
 
 conceptsInvolvementT2:
   - "snomedct:102297006"
   - "snomedct:81623005"
-  - "snomedct:46621007"
+
 conceptsPresentT2:
-
-conceptsT3:
+  - "snomedct:46621007"
   - "snomedct:205237003"
-  - "snomedct:78904004"
-conceptsT4:
 
-sizesT1:
-  "1a" :
-sizesT2 = new HashMap<>();
-sizesT3 = new HashMap<>();
+conceptsInvolvementT3:
+  - "snomedct:78904004" 
+  - "snomedct:50230006" 
+  - "snomedct:76848001" 
+ 
+conceptsPresentT3:
+  - "snomedct:396408009"
 
-private Map<String, Double> sizesT4 = new HashMap<>();
+conceptsInvolvementT4:
+  - "snomedct:5798000" 
+  - "snomedct:72410000" 
+  - "snomedct:80891009" 
+  - "snomedct:3711007" 
+  - "snomedct:44567001" 
+  - "snomedct:731050007" 
+  - "snomedct:32849002" 
+  - "snomedct:3572006" 
+  - "snomedct:28700002" 
 
-private String conceptSuperiorLobeRight;
+conceptsPresentT4:
 
-private String conceptSuperiorLobeLeft;
+conceptSuperiorLobeRight: "snomedct:362898004" 
+conceptSuperiorLobeLeft: "snomedct:44714003"
+conceptMiddleLobe: "snomedct:72481006" 
+conceptInferiorLobeRight: "snomedct:266005" 
+conceptInferiorLobeLeft: "snomedct:41224006" 
 
-private String conceptMiddleLobe;
-conceptInferiorLobeRight;
-conceptInferiorLobeLeft:
+size-label-larger-than:
+  - T1a: 0
+  - T1b: 1
+  - T1c: 2
+  - T2a: 3
+  - T2b: 4
+  - T3: 5
+  - T4: 7
+ 
