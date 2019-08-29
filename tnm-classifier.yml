@@ -1,0 +1,30 @@
+conceptInvolvement: "snomedct:248448006";
+conceptTumor: "snomedct:108369006";
+conceptTumorT4: "snomedct:108369006_t4"
+conceptTumorBlackList = Arrays.asList("snomedct:108369006_blacklist");
+conceptLymphNodes: "snomedct:59441001";
+conceptsT1:
+
+conceptsT2:
+  - "snomedct:102297006"
+  - "snomedct:81623005"
+  - "snomedct:46621007"
+conceptsT3:
+  - "snomedct:205237003"
+  - "snomedct:78904004"
+conceptsT4:
+
+sizesT1:
+  "1a" :
+sizesT2 = new HashMap<>();
+sizesT3 = new HashMap<>();
+
+private Map<String, Double> sizesT4 = new HashMap<>();
+
+private String conceptSuperiorLobeRight;
+
+private String conceptSuperiorLobeLeft;
+
+private String conceptMiddleLobe;
+conceptInferiorLobeRight;
+conceptInferiorLobeLeft:
