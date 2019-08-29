@@ -1,13 +1,15 @@
 Comments: ''
 Direction: ''
 Lex: concept_tumor
-Regex: '(mass|tumor|nodu|haard|carcino|laesie|letsel|\brip\b|\bRIP\b|ruimte(-)?innemend process|maligniteit|verdicht|indicht)'
+Regex: ''(massa|tumor|nodu|haard|carcino|laesie|letsel|\brip\b|\bRIP\b|ruimte(-)?innemend process|maligniteit|verdicht|indicht)'
 Type: 'snomedct:108369006'
+
+mass|tumor|tumour|node|haard?|carcinoma|carcino|laesie|lesion|letsel?|\brip\b|\bRIP\b|ruimte(-)?innemend process?|malign|malignancy|verdicht?|indicht?
 ---
 Comments: ''
 Direction: ''
 Lex: concept_tumor_t4
-Regex: '(mass|tumor|haard|carcino|laesie|letsel|\brip\b|\bRIP\b|ruimte(-)?innemend process|maligniteit|verdicht|indicht)'
+Regex: '(mass|tumor|tumour|haard?|carcinoma|carcino|laesie|lesion|letsel?|\brip\b|\bRIP\b|ruimte(-)?innemend process?|malign|malignancy|verdicht?|indicht?)'
 Type: 'snomedct:108369006_t4'
 ---
 Comments: ''
@@ -21,141 +23,189 @@ Direction: ''
 Lex: concept_involvement
 Regex: 'aan(ge)?tast|destructie|(door|in)(ge)?groei|uitbreiding|betrokken|invade|invasie|induratie'
 Type: 'snomedct:248448006'
+
+affecting|attacking|injuring|destruct|ingrowth|growth|extension|expansion|involved|invade|invasive|induration?
 ---
 Comments: ''
 Direction: ''
 Lex: lymph_nodes
 Regex: 'lymf|nodes|klier'
 Type: 'snomedct:59441001'
+
+lymph node|node 
 ---
 Comments: ''
 Direction: ''
 Lex: main_bronchus
 Regex: '(centrale|hoofd|hilair).*bronch'
 Type: 'snomedct:102297006'
+
+main bronchus|primal bronchus|first bronchus|
 ---
 Comments: ''
 Direction: ''
 Lex: visceral_pleura
 Regex: 'pleura|longvlies'
 Type: 'snomedct:81623005'
+
+pleura|pleural|visceral pleura|parietal pleura|
 ---
 Comments: ''
 Direction: ''
 Lex: atelectasis
 Regex: 'atelect|samengevallen'
 Type: 'snomedct:46621007'
+
+atelectasis|compressed?
 ---
 Comments: ''
 Direction: ''
 Lex: obstructive_pneumonitis
 Regex: 'obstructieve pneumoni|infect.*verander'
 Type: 'snomedct:205237003'
+
+pneumonitis|obstructive pneumonitis|obstructive infectious disease|obstructive pneumonia
 ---
 Comments: ''
 Direction: ''
 Lex: chest_wall
 Regex: 'borst.*wan|thorax.*wan|rib|costa'
 Type: 'snomedct:78904004'
+
+chest wall|costa|costal|rib
 ---
 Comments: ''
 Direction: ''
 Lex: nervus_phrenicus
 Regex: 'nervus.*(phrenicus|frenicus)'
 Type: 'snomedct:50230006'
+
+phrenic nerve|nervus phrenicus 
 ---
 Comments: ''
 Direction: ''
 Lex: parietale_pericard
 Regex: 'pericard'
 Type: 'snomedct:76848001'
+
+pericard|pericardium|parietal pericard
 ---
 Comments: ''
 Direction: ''
 Lex: satellite_nodule
 Regex: 'satelliet.*'
 Type: 'snomedct:396408009'
+
+satellite nodule|seeding?
 ---
 Comments: ''
 Direction: ''
 Lex: diafragm
 Regex: 'diafragm|middenrif'
 Type: 'snomedct:5798000'
+
+diafragm|midriff
 ---
 Comments: ''
 Direction: ''
 Lex: mediastinum
 Regex: 'mediast'
 Type: 'snomedct:72410000'
+
+mediastinum|mediast
 ---
 Comments: ''
 Direction: ''
 Lex: heart
 Regex: 'hart|epicard'
 Type: 'snomedct:80891009'
+
+heart|cor|cardial
 ---
 Comments: ''
 Direction: ''
 Lex: great_vessels
 Regex: 'grote vaten|centrale vaten|aorta|vena cava|vcs|VCS'
 Type: 'snomedct:3711007'
+
+great vessel|great vessels|central vessels|central vessel|aorta|vena cava|VCS
 ---
 Comments: ''
 Direction: ''
 Lex: trachea
 Regex: 'trachea|luchtpijp'
 Type: 'snomedct:44567001'
+
+windpipe|trachea
 ---
 Comments: ''
 Direction: ''
 Lex: recurrent_laryngeal_nerve
 Regex: 'recurrens'
 Type: 'snomedct:731050007'
+
+recurrent laryngeal nerve|laryngeal nerve| nervus laryngeus recurrens
 ---
 Comments: ''
 Direction: ''
 Lex: oesophagus
 Regex: 'oesophagus|slok|oesofagus|oesof|oesoph'
 Type: 'snomedct:32849002'
+
+oesophagus|esophagus
 ---
 Comments: ''
 Direction: ''
 Lex: vertebral_body
 Regex: 'wervel|vertebra'
 Type: 'snomedct:3572006'
+
+vertebral body|vertebra|spine|spinal
 ---
 Comments: ''
 Direction: ''
 Lex: carina
 Regex: 'carina'
 Type: 'snomedct:28700002'
+
+carina
 ---
 Comments: ''
 Direction: ''
 Lex: superior_lobe_right
 Regex: 'rechter\s{0,1}bovenkwab|boven\s{0,1}kwab rechts|\bRBK\b|\bRBL\b'
 Type: 'snomedct:362898004'
+
+superior right lobe|upper right lobe|apical right lobe|leaf?
 ---
 Comments: ''
 Direction: ''
 Lex: superior_lobe_left
 Regex: 'linker\s{0,1}bovenkwab|boven\s{0,1}kwab links|\bLBK\b|\bLBL\b'
 Type: 'snomedct:44714003'
+
+superior left lobe|upper left lobe|apical left lobe|leaf
 ---
 Comments: ''
 Direction: ''
 Lex: middle_lobe
 Regex: 'midde.*(kwab|lob)|\bMK\b|\bML\b'
 Type: 'snomedct:72481006'
+
+middle lobe|center lobe|centre lobe|lobus intermedius|
 ---
 Comments: ''
 Direction: ''
 Lex: inferior_lobe_right
 Regex: 'rechter\s{0,1}onder\s{0,1}(kwab|lob)|onder\s{0,1}(kwab|lob) recht|\bROK\b|\bROL\b'
 Type: 'snomedct:266005'
+
+inferior right lobe|lower right lobe|
 ---
 Comments: ''
 Direction: ''
 Lex: inferior_lobe_left
 Regex: 'linker\s{0,1}onder\s{0,1}(kwab|lob)|onder\s{0,1}(kwab|lob) link|\bLOK\b|\bLOL\b'
 Type: 'snomedct:41224006'
+
+inferior left lobe|lower left lobe|leaf
