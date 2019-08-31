@@ -1,13 +1,13 @@
 Comments: ''
 Direction: ''
 Lex: concept_tumor
-Regex: 'mass|tumor|tumour|node|haard?|carcinoma|carcino|laesie|lesion|letsel?|\brip\b|\bRIP\b|ruimte(-)?innemend process?|malign|malignancy|verdicht?|indicht'
+Regex: '(mass|tumor|tumour|node|haard|carcinoma|carcino|laesie|lesion|letsel|\brip\b|\bRIP\b|ruimte(-)innemend process|malign|malignancy|verdicht|indicht)'
 Type: 'snomedct:108369006'
 ---
 Comments: ''
 Direction: ''
 Lex: concept_tumor_t4
-Regex: '(mass|tumor|tumour|haard?|carcinoma|carcino|laesie|lesion|letsel?|\brip\b|\bRIP\b|ruimte(-)?innemend process?|malign|malignancy|verdicht?|indicht?)'
+Regex: '(mass|tumor|tumour|haard|carcinoma|carcino|laesie|lesion|letsel|\brip\b|\bRIP\b|ruimte(-)innemend process|malign|malignancy|verdicht|indicht)'
 Type: 'snomedct:108369006_t4'
 ---
 Comments: ''
@@ -19,7 +19,7 @@ Type: 'snomedct:108369006_blacklist'
 Comments: ''
 Direction: ''
 Lex: concept_involvement
-Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension|expansion|involved|invade|invasive|induration?'
+Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension|expansion|involved|invade|invasive|induration'
 Type: 'snomedct:248448006'
 ---
 Comments: ''
