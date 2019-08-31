@@ -145,7 +145,7 @@ Type: 'snomedct:44714003'
 Comments: ''
 Direction: ''
 Lex: middle_lobe
-Regex: 'middle lobe|center lobe|centre lobe|lobus intermedius|'
+Regex: 'middle lobe|center lobe|centre lobe|lobus intermedius'
 Type: 'snomedct:72481006'
 ---
 Comments: ''
