@@ -19,7 +19,7 @@ Type: 'snomedct:108369006_blacklist'
 Comments: ''
 Direction: ''
 Lex: concept_involvement
-Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension|expansion|involved|invade|invasive|induration'
+Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension|expansion|involv|invad|invas|induration'
 Type: 'snomedct:248448006'
 ---
 Comments: ''
