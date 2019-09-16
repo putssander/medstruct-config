@@ -1,7 +1,0 @@
-measurement-extractor:
-  codes:
-    - code: "loinc:21889-1" #tumor size
-      unit: "mm"
-      preceded-by: "snomedct:108369006" #tumor
-      not-preceded-by: "snomedct:59441001" #lymph
-      measurement-type: "LENGTH"

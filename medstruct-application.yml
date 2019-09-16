@@ -1,0 +1,50 @@
+simple-sectionizer:
+  regex_whitelist_required:
+    - 'thorax:'
+  regex_whitelist_optional:
+    - 'conclusie:'
+  regex_blacklist:
+    - 'gegevens:'
+    - 'vraagstelling:'
+
+preprocessor:
+  replace-abbreviations:
+    "ca.": "circa"
+  replace-punctuations:
+    ":": ""
+
+tnm-classification:
+  xlsx-result-columns:
+    - 'involved'
+    - 'present'
+    - 'satelliteNodules'
+    - 'tumorsInDiffentLobesIpsilateral'
+    - 'lymphNodes'
+    - 'tnmT'
+    - 'tnmN'
+    - 'tnmM'
+
+medstruct:
+  xlsx:
+    text-column: 'report'
+    label-column: 'GOLD'
+  results:
+    confusion-matrix-prefix: 'confusion-matrix'
+    confusion-matrix-eps: false
+    output-dir: '/data/results'
+
+spacy:
+  model: nl_core_news_sm
+  url: 'http://spacy-json-nlp-medstruct:5001/token_list'
+
+pycontextnlp:
+  # host: 'localhost'
+  host: 'pycontext-json-nlp-medstruct'
+  # port: 9999
+  url: 'http://pycontext-json-nlp-medstruct:5003/json-nlp'
+
+medstruct-measurement-extractor:
+  url: 'http://medstruct-measurement-extractor:5004/api/json-nlp/measurements'
+
+medstruct-tnm-client:
+  url: 'http://medstruct-tnm-classifier:5005/api/json-nlp/tnm-lung'

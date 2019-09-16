@@ -1,0 +1,46 @@
+measurement-extractor:
+  blacklist-pattern: "(.*)-(.*)"
+  split-pattern: "x"
+  code-matching-bound-to-sentence-start: true
+
+  codes:
+  - code: "loinc:21889-1" #tumor size
+    unit: "cm"
+    preceding-concept: "snomedct:108369006" #tumor
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+  - code: "none:lymph-node-size" #lymph node size
+    unit: "cm"
+    preceding-concept: "snomedct:59441001" #lymph
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+
+  quantity-subtypes:
+  - subtype: "DISTANCE"
+    regex: "afstand|gebied tussen|ruimte tussen"
+    quantity: "LENGTH"
+  - subtype: "LOCATION"
+    regex: "bevindt zich"
+    quantity: "LENGTH"
+  - subtype: "DIMENSION"
+    regex: "groot|diameter|afmeting|korte as"
+    quantity: "LENGTH"
+  - subtype: "DISPLACEMENT"
+    regex: "shift"
+    quantity: "LENGTH"
+
+  quantity.length:
+    normalization-unit: "cm"
+    unitMmPattern: "mm|millimeter"
+    unitCmPattern: "cm|centimeter"
+    unitDmPattern: "dm|decimeter"
+    dimensionAttributePattern: "(x|bij|maal|op|plus.*minus|ongeveer|om en nabij|a|circa|en)"
+
+
+
+processor.enabled: true
+restcontroller.enabled: false
+
+server:
+  port: 5004
+

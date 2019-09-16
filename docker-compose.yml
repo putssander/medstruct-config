@@ -1,0 +1,56 @@
+version: '3.7'
+
+services:
+  pycontext-json-nlp-medstruct:
+    image: maastrodocker/pycontextnlp:latest
+    container_name: pycontext-json-nlp-medstruct
+    environment:
+    - MODIFIERS=https://raw.githubusercontent.com/maastroclinic/medstruct/master/medstruct/resources/tnmlung/lexical_kb_2019feb20_nl.yml
+    - TARGETS=https://raw.githubusercontent.com/putssander/medstruct-config/master/pycontextnlp_tnm_targets_nl.yml
+    expose:
+    - '9999'
+    ports:
+    - '5003:5003'
+    - '9999:9999'
+    networks:
+    - medstruct-network
+    # entrypoint: python /app/pyConTextNLP/io/tcpService.py --port=9999
+
+  spacy-json-nlp-medstruct:
+    image: putssander/spacy-json-nlp:all_v2
+    container_name: spacy-json-nlp-medstruct
+    expose:
+    - '5001'
+    ports:
+    - '5001:5001'
+    environment:
+    - COREFERENCES=false
+    - CONSTITUENTS=false
+
+  medstruct-measurement-extractor:
+    image: putssander/medstruct-measurement-extractor:latest
+    container_name: medstruct-measurement-extractor
+    expose:
+    - '5004'
+    ports:
+    - '5004:5004'
+    environment:
+    - SPRING_PROFILES_ACTIVE=rest
+    - SPRING_CONFIG_LOCATION=https://raw.githubusercontent.com/maastroclinic/medstruct/master/medstruct-measurement-extractor-application.yml
+
+
+  medstruct-tnm-classifier:
+    image: putssander/medstruct-tnm-classifier:latest
+    container_name: medstruct-tnm-classifier
+    expose:
+    - '5005'
+    ports:
+    - '5005:5005'
+    environment:
+    - SPRING_PROFILES_ACTIVE=rest
+    - SPRING_CONFIG_LOCATION=https://raw.githubusercontent.com/maastroclinic/medstruct/master/medstruct-tnm-classifier-application.yml
+
+
+networks:
+  medstruct-network:
+    external: true
