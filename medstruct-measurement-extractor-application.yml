@@ -38,8 +38,8 @@ measurement-extractor:
 
 
 
-processor.enabled: true
-restcontroller.enabled: false
+processor.enabled: false
+restcontroller.enabled: true
 
 server:
   port: 5004

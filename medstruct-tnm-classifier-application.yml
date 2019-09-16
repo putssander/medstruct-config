@@ -73,8 +73,8 @@ lung-tnm-classification:
     - "snomedct:46621007"
 
 
-processor.enabled: true
-restcontroller.enabled: false
+processor.enabled: false
+restcontroller.enabled: true
 
 server:
   port: 5005
