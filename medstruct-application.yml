@@ -34,7 +34,7 @@ medstruct:
     output-dir: '/data/results'
 
 spacy:
-  model: nl_core_news_sm
+  model: en_core_web_sm
   url: 'http://spacy-json-nlp-medstruct:5001/token_list'
 
 pycontextnlp:

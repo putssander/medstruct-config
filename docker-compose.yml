@@ -5,8 +5,8 @@ services:
     image: maastrodocker/pycontextnlp:latest
     container_name: pycontext-json-nlp-medstruct
     environment:
-    - MODIFIERS=https://raw.githubusercontent.com/maastroclinic/medstruct/master/medstruct/resources/tnmlung/lexical_kb_2019feb20_nl.yml
-    - TARGETS=https://raw.githubusercontent.com/putssander/medstruct-config/master/pycontextnlp_tnm_targets_nl.yml
+    - MODIFIERS=https://raw.githubusercontent.com/putssander/medstruct-config/BOSTON//pycontextnlp_modifiers_en.yml
+    - TARGETS=https://raw.githubusercontent.com/putssander/medstruct-config/BOSTON/pycontextnlp_tnm_targets_en.yml
     expose:
     - '9999'
     ports:
@@ -38,7 +38,7 @@ services:
     - '5004:5004'
     environment:
     - SPRING_PROFILES_ACTIVE=rest
-    - SPRING_CONFIG_LOCATION=https://raw.githubusercontent.com/putssander/medstruct-config/master/medstruct-measurement-extractor-application.yml
+    - SPRING_CONFIG_LOCATION=https://raw.githubusercontent.com/putssander/medstruct-config/BOSTON/medstruct-measurement-extractor-application.yml
     networks:
     - medstruct-network
 
@@ -51,7 +51,7 @@ services:
     - '5005:5005'
     environment:
     - SPRING_PROFILES_ACTIVE=rest
-    - SPRING_CONFIG_LOCATION=https://raw.githubusercontent.com/putssander/medstruct-config/master/medstruct-tnm-classifier-application.yml
+    - SPRING_CONFIG_LOCATION=https://raw.githubusercontent.com/putssander/medstruct-config/BOSTON/medstruct-tnm-classifier-application.yml
     networks:
     - medstruct-network
 
