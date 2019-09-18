@@ -43,7 +43,7 @@ Type: 'snomedct:81623005'
 Comments: ''
 Direction: ''
 Lex: atelectasis
-Regex: 'atelect|compressed|collapse'
+Regex: 'atelect|collapse'
 Type: 'snomedct:46621007'
 ---
 Comments: ''
