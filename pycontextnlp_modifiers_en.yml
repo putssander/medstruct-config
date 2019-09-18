@@ -2278,3 +2278,57 @@ Direction: bidirectional
 Lex: favor
 Regex: ''
 Type: PROBABLE_EXISTENCE
+---
+Lex: 'cave'
+Type: PROBABLE_NEGATED_EXISTENCE
+Regex: 'cave'
+Direction: forward
+Unnamed-4: ""
+Unnamed-5: ""
+Unnamed-6: ""
+Codes: ""
+---
+Lex: 'some'
+Type: LIMITED_AMOUNT
+Regex: 'some'
+Direction: forward
+Unnamed-4: ""
+Unnamed-5: ""
+Unnamed-6: ""
+Codes: ""
+---
+Lex: 'limited'
+Type: LIMITED_AMOUNT
+Regex: 'limited'
+Direction: forward
+Unnamed-4: ""
+Unnamed-5: ""
+Unnamed-6: ""
+Codes: ""
+---
+Lex: 'small'
+Type: LIMITED_AMOUNT
+Regex: 'small'
+Direction: forward
+Unnamed-4: ""
+Unnamed-5: ""
+Unnamed-6: ""
+Codes: ""
+---
+Lex: 'bit'
+Type: LIMITED_AMOUNT
+Regex: 'bit|scrap|little'
+Direction: forward
+Unnamed-4: ""
+Unnamed-5: ""
+Unnamed-6: ""
+Codes: ""
+---
+Lex: 'slightly'
+Type: LIMITED_AMOUNT
+Regex: 'slightly'
+Direction: forward
+Unnamed-4: ""
+Unnamed-5: ""
+Unnamed-6: ""
+Codes: ""
