@@ -72,6 +72,8 @@ lung-tnm-classification:
     exist-special-concept-blacklist:
     - "snomedct:46621007"
 
+  secondary-tumor-blacklist-pattern: "(.*)nodu(.*)"
+  apply-secondary-tumor-blacklist-pattern: true
 
 processor.enabled: false
 restcontroller.enabled: true
