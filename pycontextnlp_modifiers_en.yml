@@ -2288,18 +2288,9 @@ Unnamed-5: ""
 Unnamed-6: ""
 Codes: ""
 ---
-Lex: 'wat'
+Lex: 'some'
 Type: LIMITED_AMOUNT
-Regex: 'wat'
-Direction: forward
-Unnamed-4: ""
-Unnamed-5: ""
-Unnamed-6: ""
-Codes: ""
----
-Lex: 'enige'
-Type: LIMITED_AMOUNT
-Regex: 'enige'
+Regex: 'some'
 Direction: forward
 Unnamed-4: ""
 Unnamed-5: ""
