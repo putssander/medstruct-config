@@ -1,8 +1,11 @@
 simple-sectionizer:
   regex_whitelist_required:
     - 'thorax:'
+    - 'chest:'
+    - 'chest/'
+    - 'chest'
   regex_whitelist_optional:
-    - 'conclusie:'
+    - 'impression'
   regex_blacklist:
     - 'gegevens:'
     - 'vraagstelling:'
