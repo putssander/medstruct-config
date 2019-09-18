@@ -19,13 +19,13 @@ Type: 'snomedct:108369006_blacklist'
 Comments: ''
 Direction: ''
 Lex: concept_involvement
-Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension|expansion|involv|invad|invas|induration'
+Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension|expansion|involvement of|involve|invad|invas|induration'
 Type: 'snomedct:248448006'
 ---
 Comments: ''
 Direction: ''
 Lex: lymph_nodes
-Regex: 'lymph|node'
+Regex: 'lymph|node|adenopathy'
 Type: 'snomedct:59441001'
 ---
 Comments: ''
@@ -43,7 +43,7 @@ Type: 'snomedct:81623005'
 Comments: ''
 Direction: ''
 Lex: atelectasis
-Regex: 'atelect|compressed'
+Regex: 'atelect|compressed|collapse'
 Type: 'snomedct:46621007'
 ---
 Comments: ''
