@@ -23,7 +23,7 @@ Supported languages: Dutch
 
     docker network create medstruct-network
 
-    docker-compose up -d
+    docker-compose pull && docker-compose up -d
 
     docker run -ti --rm --net medstruct-network -v '/data/reports/t-stage/:/data/' -v ${PWD}/medstruct-application.yml:/app/application.yml putssander/medstruct:2.0 python medstruct/xlsx_run.py /data/t-stage-reports-val-copy.xlsx training-set
     

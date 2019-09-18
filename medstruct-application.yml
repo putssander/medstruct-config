@@ -19,6 +19,7 @@ tnm-classification:
     - 'present'
     - 'satelliteNodules'
     - 'tumorsInDiffentLobesIpsilateral'
+    - 'tumors'
     - 'lymphNodes'
     - 'tnmT'
     - 'tnmN'
