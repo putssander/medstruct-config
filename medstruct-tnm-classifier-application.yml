@@ -72,6 +72,7 @@ lung-tnm-classification:
     exist-special-concept-blacklist:
     - "snomedct:46621007"
 
+  min-tumor-size: 1
   secondary-tumor-blacklist-pattern: "(.*)nodu(.*)"
   apply-secondary-tumor-blacklist-pattern: true
 
