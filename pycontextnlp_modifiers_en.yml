@@ -2262,7 +2262,7 @@ Regex: likely (represents|representing)
 Type: PROBABLE_EXISTENCE
 ---
 Comments: ''
-Direction: backwards
+Direction: backward
 Lex: without change
 Regex: ''
 Type: HISTORICAL
@@ -2328,6 +2328,24 @@ Lex: 'slightly'
 Type: LIMITED_AMOUNT
 Regex: 'slightly'
 Direction: forward
+Unnamed-4: ""
+Unnamed-5: ""
+Unnamed-6: ""
+Codes: ""
+---
+Lex: 'bibasal'
+Type: LIMITED_AMOUNT
+Regex: 'bibasal'
+Direction: bidirectional
+Unnamed-4: ""
+Unnamed-5: ""
+Unnamed-6: ""
+Codes: ""
+---
+Lex: 'bilateral'
+Type: LIMITED_AMOUNT
+Regex: 'bilateral'
+Direction: bidirectional
 Unnamed-4: ""
 Unnamed-5: ""
 Unnamed-6: ""
