@@ -16,8 +16,8 @@ preprocessor:
 
 tnm-classification:
   xlsx-result-columns:
-    - 'involved'
-    - 'present'
+    - 'involvedText'
+    - 'presentText'
     - 'satelliteNodules'
     - 'tumorsInDiffentLobesIpsilateral'
     - 'tumors'
