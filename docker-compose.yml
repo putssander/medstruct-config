@@ -55,6 +55,30 @@ services:
     networks:
     - medstruct-network
 
+  medstruct-api-dev:
+    image: putssander/medstruct:2.0
+    container_name: medstruct-api
+    expose:
+    - '8081'
+    ports:
+    - '8081:8081'
+    volumes:
+    - './medstruct-application.yml:/app/application.yml'
+    networks:
+    - medstruct-network
+
+  medstruct-gui:
+    image: putssander/medstruct-gui:0.1
+    container_name: medstruct-gui
+    environment:
+    - SPRING_PROFILES_ACTIVE=docker
+    expose:
+    - '8080'
+    ports:
+    - '8080:8080'
+    networks:
+    - medstruct-network
+
 networks:
   medstruct-network:
     external: true
