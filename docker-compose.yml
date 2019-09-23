@@ -55,7 +55,7 @@ services:
     networks:
     - medstruct-network
 
-  medstruct-api-dev:
+  medstruct-api:
     image: putssander/medstruct:2.0
     container_name: medstruct-api
     expose:
