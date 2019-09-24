@@ -34,7 +34,7 @@ measurement-extractor:
     unitMmPattern: "mm|millimeter"
     unitCmPattern: "cm|centimeter"
     unitDmPattern: "dm|decimeter"
-    dimensionAttributePattern: "(x|bij|maal|op|plus.*minus|ongeveer|om en nabij|a|circa|en)"
+    dimensionAttributePattern: "(x|by|times|at least|and)"
 
 
 
