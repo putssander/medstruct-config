@@ -59,11 +59,11 @@ lung-tnm-classification:
   context:
     exist:
     - "definite_existence"
+    - "probable_existence"
     negate:
     - "definite_negated_existence"
     - "pseudoneg"
     uncertain:
-    - "probable_existence"
     - "probable_negated_existence"
     - "indication"
     - "ambivalent_existence"
