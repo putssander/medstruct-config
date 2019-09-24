@@ -59,9 +59,6 @@ lung-tnm-classification:
   context:
     exist:
     - "definite_existence"
-    - "historical"
-    exist-special:
-    - "limited_amount"
     negate:
     - "definite_negated_existence"
     - "pseudoneg"
@@ -69,7 +66,11 @@ lung-tnm-classification:
     - "probable_existence"
     - "probable_negated_existence"
     - "indication, ambivalent_existence"
-    exist-special-concept-blacklist:
+    historical:
+    - "historical"
+    exist-cncept-blacklist-modifiers:
+    - "limited_amount"
+    exist-concept-blacklist:
     - "snomedct:46621007"
 
   min-tumor-size: 1
