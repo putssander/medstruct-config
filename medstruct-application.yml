@@ -5,7 +5,8 @@ simple-sectionizer:
     - 'impression:'
   regex_blacklist:
     - 'comparison:'
-    - 'vraagstelling:'
+    - 'abdomen:'
+    - 'abdomen/pelvis:'
   boston_style_sectionizer: true
 
 preprocessor:
