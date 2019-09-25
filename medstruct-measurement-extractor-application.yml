@@ -31,10 +31,10 @@ measurement-extractor:
 
   quantity.length:
     normalization-unit: "cm"
-    unitMmPattern: "mm|millimeter"
-    unitCmPattern: "cm|centimeter"
-    unitDmPattern: "dm|decimeter"
-    dimensionAttributePattern: "(x|by|times|at least|and)"
+    unitMmPattern: "mm|millimeter|millimetre"
+    unitCmPattern: "cm|centimeter|centimetre"
+    unitDmPattern: "dm|decimeter|decimetre"
+    dimensionAttributePattern: "(x|X|by|times|at least|and)"
 
 
 
