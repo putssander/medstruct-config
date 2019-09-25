@@ -4,7 +4,7 @@ simple-sectionizer:
   regex_whitelist_optional:
     - 'impression:'
   regex_blacklist:
-    - 'gegevens:'
+    - 'comparison:'
     - 'vraagstelling:'
   boston_style_sectionizer: true
 
