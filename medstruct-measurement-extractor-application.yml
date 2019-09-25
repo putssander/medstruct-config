@@ -29,14 +29,24 @@ measurement-extractor:
     regex: "shift"
     quantity: "LENGTH"
 
+  ordinal-map:
+    "1": "one"
+    "2": "two"
+    "3": "three"
+    "4": "four"
+    "5": "five"
+    "6": "six"
+    "7": "seven"
+    "8": "eight"
+    "9": "nine"
+    "10": "ten"
+
   quantity.length:
     normalization-unit: "cm"
-    unitMmPattern: "mm|millimeter|millimetre"
-    unitCmPattern: "cm|centimeter|centimetre"
-    unitDmPattern: "dm|decimeter|decimetre"
-    dimensionAttributePattern: "(x|X|by|times|at least|and)"
-
-
+    unitMmPattern: "mm|millimetre||millimetres|millimeter"
+    unitCmPattern: "cm|centimetre|centimetres|centimeter"
+    unitDmPattern: "dm|decimetre|decimetres|decimeter"
+    dimensionAttributePattern: "(x|by|times|at least|and)"
 
 processor.enabled: false
 restcontroller.enabled: true
