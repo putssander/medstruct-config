@@ -46,7 +46,7 @@ measurement-extractor:
     unitMmPattern: "mm|millimetre||millimetres|millimeter"
     unitCmPattern: "cm|centimetre|centimetres|centimeter"
     unitDmPattern: "dm|decimetre|decimetres|decimeter"
-    dimensionAttributePattern: "(x|by|times|at least|and)"
+    dimensionAttributePattern: "(x|X|by|times|at least|and)"
 
 processor.enabled: false
 restcontroller.enabled: true
