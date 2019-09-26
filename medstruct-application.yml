@@ -1,12 +1,21 @@
 simple-sectionizer:
   regex_whitelist_required:
     - 'chest:'
+    - 'lung and pleura:'
+    - 'mediastinum:'
   regex_whitelist_optional:
     - 'impression:'
   regex_blacklist:
     - 'comparison:'
+    - 'indication:'
+    - 'radiopharmaceutical:'
+    - 'dose:'     
+    - 'technique:'
+    - 'blood glucose:' 
     - 'abdomen:'
     - 'abdomen/pelvis:'
+    - 'pelvis:'
+    - 'musculoskeletal:'
   boston_style_sectionizer: true
 
 preprocessor:
