@@ -121,29 +121,29 @@ Type: 'snomedct:28700002'
 Comments: ''
 Direction: ''
 Lex: superior_lobe_right
-Regex: 'superior right lobe|superior lobe right|upper right lobe|upper lobe right|right upper lobe|apical right lobe|\bRUL\b'
+Regex: 'superior right lobe|superior lobe right|upper right lobe|right upper lobe|upper lobe right|apical right lobe|apical lobe right|upper lobe of right|\bRUL\b|\bSLR\b'
 Type: 'snomedct:362898004'
 ---
 Comments: ''
 Direction: ''
 Lex: superior_lobe_left
-Regex: 'superior left lobe|superior lobe left|upper left lobe|left upper lobe|apical left lobe|leaf|\bLUL\b'
+Regex: 'superior left lobe|superior lobe left|upper left lobe|left upper lobe|upper left lobe|apical left lobe|apical lobe left|upper lobe of left|\bLUL\b|\bSLL\b'
 Type: 'snomedct:44714003'
 ---
 Comments: ''
 Direction: ''
 Lex: middle_lobe
-Regex: 'middle lobe|center lobe|lobus intermedius'
+Regex: 'middle lobe|center lobe|lobus intermedius|ML|RML'
 Type: 'snomedct:72481006'
 ---
 Comments: ''
 Direction: ''
 Lex: inferior_lobe_right
-Regex: 'inferior right lobe|inferior lobe right|lower right lobe|right lower lobe|\bRLL\b'
+Regex: 'inferior right lobe|inferior lobe right|lower right lobe|right lower lobe|lower lobe right|basal lobe right|\bRLL\b|\bILR\b'
 Type: 'snomedct:266005'
 ---
 Comments: ''
 Direction: ''
 Lex: inferior_lobe_left
-Regex: 'inferior left lobe|inferior lobe left|lower left lobe|left lower lobe|leaf'
+Regex: 'inferior left lobe|inferior lobe left|lower left lobe|left lower lobe|lower lobe left|basal lobe left|\bLLL\b|\bILL\b'
 Type: 'snomedct:41224006'
