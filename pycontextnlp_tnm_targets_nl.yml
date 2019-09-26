@@ -138,7 +138,7 @@ Type: 'snomedct:362898004'
 ---
 Comments: ''
 Direction: ''
-Lex: superior_lobe_right
+Lex: superior_lobe_left
 Regex: 'linker\s{0,1}bovenkwab|boven\s{0,1}kwab links|\bLBK\b|\bLBL\b'
 Type: 'snomedct:44714003'
 ---
