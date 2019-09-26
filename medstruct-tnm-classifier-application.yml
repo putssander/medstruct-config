@@ -76,6 +76,7 @@ lung-tnm-classification:
 
   min-tumor-size: 1
   lung-size-blacklist-pattern: '(aneurysm|cyst|adenoma|adrenal|liver|kidney|spleen|colon|rectum|sigmoid|prostate|ovary|ovaries|brain|breast|thyroid|isthmus|low attenuation)'
+  apply-lung-size-blacklist-pattern: true
   secondary-tumor-blacklist-pattern: "(.*)nodu(.*)"
   apply-secondary-tumor-blacklist-pattern: true
 
