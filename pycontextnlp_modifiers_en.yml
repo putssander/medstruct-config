@@ -366,7 +366,7 @@ Regex: no longer (seen|noted|visualized)
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: 3/23/2013
-Direction: bidirectional
+Direction: forward
 Lex: not
 Regex: \bnot\b
 Type: DEFINITE_NEGATED_EXISTENCE
@@ -2333,7 +2333,7 @@ Unnamed-5: ""
 Unnamed-6: ""
 Codes: ""
 ---
-Lex: 'bibasal'
+Lex: 'bibas'
 Type: LIMITED_AMOUNT
 Regex: 'bibasal'
 Direction: bidirectional
@@ -2345,6 +2345,24 @@ Codes: ""
 Lex: 'bilateral'
 Type: LIMITED_AMOUNT
 Regex: 'bilateral'
+Direction: bidirectional
+Unnamed-4: ""
+Unnamed-5: ""
+Unnamed-6: ""
+Codes: ""
+---
+Lex: 'subsegmental'
+Type: LIMITED_AMOUNT
+Regex: 'subsegmental'
+Direction: bidirectional
+Unnamed-4: ""
+Unnamed-5: ""
+Unnamed-6: ""
+Codes: ""
+---
+Lex: 'basilar'
+Type: LIMITED_AMOUNT
+Regex: 'basilar'
 Direction: bidirectional
 Unnamed-4: ""
 Unnamed-5: ""

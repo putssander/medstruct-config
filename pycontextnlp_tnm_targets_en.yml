@@ -1,31 +1,31 @@
 Comments: ''
 Direction: ''
 Lex: concept_tumor
-Regex: '(tumor|tumour|node|haard|carcinoma|carcino|letsel|\brip\b|\bRIP\b|ruimte(-)innemend process|malign|malignancy|verdicht|indicht)'
+Regex: '(tumor|tumour|node|nodule|mass|carcino|malign)'
 Type: 'snomedct:108369006'
 ---
 Comments: ''
 Direction: ''
 Lex: concept_involvement
-Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension|expansion|involvement of|involve|invad|invas|induration'
+Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension in|extending in|expansion in|involvement of|infiltration of|involve|invading in|invas'
 Type: 'snomedct:248448006'
 ---
 Comments: ''
 Direction: ''
 Lex: lymph_nodes
-Regex: 'lymph|lymph.*node|adenop'
+Regex: 'lymph|lymph.*node|lymph node|subcarinal lymph node|nodal mass|adenop|paratracheal mass|mediastinal mass|mediastinal lymphadenopathy|mediastinal adenopathy'
 Type: 'snomedct:59441001'
 ---
 Comments: ''
 Direction: ''
 Lex: main_bronchus
-Regex: '(central|main|primal|first).*bronch'
+Regex: '(central|main|first).*bronch'
 Type: 'snomedct:102297006'
 ---
 Comments: ''
 Direction: ''
 Lex: visceral_pleura
-Regex: 'pleura|longvlies'
+Regex: 'pleura'
 Type: 'snomedct:81623005'
 ---
 Comments: ''
@@ -61,7 +61,7 @@ Type: 'snomedct:76848001'
 Comments: ''
 Direction: ''
 Lex: satellite_nodule
-Regex: 'satellite nodule|seeding'
+Regex: 'satellite nodule|satellite nod|satellite lesion'
 Type: 'snomedct:396408009'
 ---
 Comments: ''
@@ -73,7 +73,7 @@ Type: 'snomedct:5798000'
 Comments: ''
 Direction: ''
 Lex: mediastinum
-Regex: 'mediast'
+Regex: 'mediast|mediastinum|mediastinal fat'
 Type: 'snomedct:72410000'
 ---
 Comments: ''
@@ -85,7 +85,7 @@ Type: 'snomedct:80891009'
 Comments: ''
 Direction: ''
 Lex: great_vessels
-Regex: 'great vessel|great vessels|central vessels|central vessel|aorta|vena cava|VCS'
+Regex: 'great vessel|great vessels|central vessels|central vessel|aorta|vena cava|VCS|main pulmonary artery|main pulmonary vein'
 Type: 'snomedct:3711007'
 ---
 Comments: ''
@@ -127,7 +127,7 @@ Type: 'snomedct:362898004'
 Comments: ''
 Direction: ''
 Lex: superior_lobe_left
-Regex: 'superior left lobe|upper left lobe|apical left lobe|leaf|\bLUL\b'
+Regex: 'superior left lobe|superior lobe left|upper left lobe|left upper lobe|apical left lobe|leaf|\bLUL\b'
 Type: 'snomedct:44714003'
 ---
 Comments: ''
@@ -139,11 +139,11 @@ Type: 'snomedct:72481006'
 Comments: ''
 Direction: ''
 Lex: inferior_lobe_right
-Regex: 'inferior right lobe|lower right lobe|right lower lobe|\bRLL\b'
+Regex: 'inferior right lobe|inferior lobe right|lower right lobe|right lower lobe|\bRLL\b'
 Type: 'snomedct:266005'
 ---
 Comments: ''
 Direction: ''
 Lex: inferior_lobe_left
-Regex: 'inferior left lobe|lower left lobe|leaf'
+Regex: 'inferior left lobe|inferior lobe left|lower left lobe|left lower lobe|leaf'
 Type: 'snomedct:41224006'
