@@ -1921,6 +1921,12 @@ Type: CONJ
 ---
 Comments: ''
 Direction: terminate
+Lex: possibility of
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
 Lex: reason for
 Regex: ''
 Type: CONJ
