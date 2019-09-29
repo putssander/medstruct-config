@@ -90,12 +90,6 @@ Type: 'snomedct:5856006'
 ---
 Comments: ''
 Direction: ''
-Lex: lymph_nodes
-Regex: 'lymf|nodes|klier'
-Type: 'snomedct:59441001'
----
-Comments: ''
-Direction: ''
 Lex: main_bronchus
 Regex: '(centrale|hoofd|hilair).*bronch'
 Type: 'snomedct:102297006'
@@ -237,3 +231,9 @@ Direction: ''
 Lex: mention_right_body_side
 Regex: 'right|\dR\b|\d R\b'
 Type: 'snomedct:85421007'
+---
+Comments: ''
+Direction: ''
+Lex: lymph_nodes
+Regex: 'lymf|nodes|klier'
+Type: 'snomedct:59441001'
