@@ -25,7 +25,7 @@ Type: 'snomedct:76838003'
 Comments: ''
 Direction: ''
 Lex: mediastinal_lymph_node
-Regex: 'station {0,1}(2|3|4|8|9)|(2|3|4|8|9) {0,1}(L|R|links|rechts)|(mediastinal|paraesophageal|ligament|azygos).*(node|mass)'
+Regex: 'station {0,1}(2|3|4|8|9)|(2|3|4|8|9) (L|R|links|rechts)|(mediastinal|paraesophageal|ligament|azygos).*(node|mass)'
 Type: 'snomedct:62683002'
 ---
 Comments: ''
