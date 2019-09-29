@@ -19,37 +19,43 @@ Type: 'snomedct:248448006'
 Comments: ''
 Direction: ''
 Lex: supraclavicular_lymph_node
-Regex: '(station 1(L|R){0,1}\b)(1(L|R|left|right)|clavicular|supraclav).*(node|mass)'
+Regex: '(station {0,1}1(L|R){0,1}\b)(1 {0,1}(L|R|links|rechts)|clavicular|supraclav).*(node|mass)'
 Type: 'snomedct:76838003'
 ---
 Comments: ''
 Direction: ''
 Lex: mediastinal_lymph_node
-Regex: '(station (2|3|4|8|9)(L|R){0,1}\b)|(2|3|4|8|9(L|R| left| right)|mediast|paraesophageal|ligament|azygos).*(node|mass)'
+Regex: '(station {0,1}(2|3|4|8|9)|(2|3|4|8|9 {0,1}(L|R|links|rechts)|mediast|paraesophageal|ligament|azygos).*(node|mass)'
 Type: 'snomedct:62683002'
 ---
 Comments: ''
 Direction: ''
 Lex: aortic_lymph_node
-Regex: '(station (5|6)\b)(5|6|aortic|AP).*(node|mass)'
+Regex: '(station {0,1}(5|6)\b)(5|6|aortic|AP).*(node|mass)'
 Type: 'snomedct:35783009'
 ---
 Comments: ''
 Direction: ''
 Lex: subcarinal_lymph_node
-Regex: '(station 7)|(7|subcarinal|tracheobronch).*(node|mass)'
+Regex: '(station {0,1}7)|(7|subcarinal|tracheobronch).*(node|mass)'
 Type: 'snomedct:28330007'
 ---
 Comments: ''
 Direction: ''
 Lex: hilar_lymph_node
-Regex: '(station (10|11)(L|R){0,1}\b)|(10|11|hilar).*(node|mass)'
+Regex: '(station {0,1}(10|11)|(10|11) {0,1}(L|R|links|rechts)|(10|11|hilar).*(node|mass)'
 Type: 'snomedct:3074004'
 ---
 Comments: ''
 Direction: ''
 Lex: peripheral_lymph_node
-Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
+Regex: '(station {0,1}(12|13|14))|(12|13|14) {0,1}(L|R|links|rechts)|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
+Type: 'snomedct:3074004'
+---
+Comments: ''
+Direction: ''
+Lex: peripheral_lymph_node
+Regex: '(station (12|13|14)|(12|13|14) {0,1}(L|R|links|rechts)|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
 Type: 'snomedct:3074004'
 ---
 #Comments: ''
@@ -58,18 +64,6 @@ Type: 'snomedct:3074004'
 #Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
 #Type: 'snomedct:3074004'
 #---
-Comments: ''
-Direction: ''
-Lex: peripheral_lymph_node
-Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
-Type: 'snomedct:3074004'
----
-Comments: ''
-Direction: ''
-Lex: peripheral_lymph_node
-Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
-Type: 'snomedct:3074004'
----
 Comments: ''
 Direction: ''
 Lex: n1_node
