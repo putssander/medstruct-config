@@ -55,19 +55,19 @@ Type: 'snomedct:3074004'
 Comments: ''
 Direction: ''
 Lex: n1_node
-Regex: 'n1'
+Regex: '\bn1\b'
 Type: 'snomedct:53623008'
 ---
 Comments: ''
 Direction: ''
 Lex: n2_node
-Regex: 'n2|ips.*mediastinal|ips.subcar'
+Regex: '\bn2\b|ips.*mediastinal|ips.subcar'
 Type: 'snomedct:46059003'
 ---
 Comments: ''
 Direction: ''
 Lex: n3_node
-Regex: 'n3|contralat*mediastinal|hilar.*node|supraclav.*node'
+Regex: '\bn3\b|contralat*mediastinal|hilar.*node|supraclav.*node'
 Type: 'snomedct:5856006'
 ---
 Comments: ''
