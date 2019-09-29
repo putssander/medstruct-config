@@ -223,13 +223,13 @@ Type: 'snomedct:41224006'
 Comments: ''
 Direction: ''
 Lex: mention_left_body_side
-Regex: 'left|\dL\b|\d L\b'
+Regex: 'links|\dL\b|\d L\b|linker'
 Type: 'snomedct:31156008'
 ---
 Comments: ''
 Direction: ''
 Lex: mention_right_body_side
-Regex: 'right|\dR\b|\d R\b'
+Regex: 'rechts|\dR\b|\d R\b|rechter'
 Type: 'snomedct:85421007'
 ---
 Comments: ''
