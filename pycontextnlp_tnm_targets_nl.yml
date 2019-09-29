@@ -12,15 +12,81 @@ Type: 'snomedct:108369006_t4'
 ---
 Comments: ''
 Direction: ''
-Lex: concept_tumor_blacklist
-Regex: 'klier\s{0,1}massa'
-Type: 'snomedct:108369006_blacklist'
----
-Comments: ''
-Direction: ''
 Lex: concept_involvement
 Regex: 'aan(ge)?tast|destructie|(door|in)(ge)?groei|uitbreiding|betrokken|invade|invasie|induratie'
 Type: 'snomedct:248448006'
+---
+Comments: ''
+Direction: ''
+Lex: supraclavicular_lymph_node
+Regex: '(station 1(L|R){0,1}\b)(1(L|R|left|right)|clavicular|supraclav).*(node|mass)'
+Type: 'snomedct:76838003'
+---
+Comments: ''
+Direction: ''
+Lex: mediastinal_lymph_node
+Regex: '(station (2|3|4|8|9)(L|R){0,1}\b)|(2|3|4|8|9(L|R| left| right)|mediast|paraesophageal|ligament|azygos).*(node|mass)'
+Type: 'snomedct:62683002'
+---
+Comments: ''
+Direction: ''
+Lex: aortic_lymph_node
+Regex: '(station (5|6)\b)(5|6|aortic|AP).*(node|mass)'
+Type: 'snomedct:35783009'
+---
+Comments: ''
+Direction: ''
+Lex: subcarinal_lymph_node
+Regex: '(station 7)|(7|subcarinal|tracheobronch).*(node|mass)'
+Type: 'snomedct:28330007'
+---
+Comments: ''
+Direction: ''
+Lex: hilar_lymph_node
+Regex: '(station (10|11)(L|R){0,1}\b)|(10|11|hilar).*(node|mass)'
+Type: 'snomedct:3074004'
+---
+Comments: ''
+Direction: ''
+Lex: peripheral_lymph_node
+Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
+Type: 'snomedct:3074004'
+---
+Comments: ''
+Direction: ''
+Lex: peripheral_lymph_node
+Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
+Type: 'snomedct:3074004'
+---
+Comments: ''
+Direction: ''
+Lex: peripheral_lymph_node
+Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
+Type: 'snomedct:3074004'
+---
+Comments: ''
+Direction: ''
+Lex: peripheral_lymph_node
+Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
+Type: 'snomedct:3074004'
+---
+Comments: ''
+Direction: ''
+Lex: n1_node
+Regex: '(n1)'
+Type: 'snomedct:53623008'
+---
+Comments: ''
+Direction: ''
+Lex: n2_node
+Regex: '(n2|ips.*mediast|ips.subcar)'
+Type: 'snomedct:46059003'
+---
+Comments: ''
+Direction: ''
+Lex: n3_node
+Regex: '(n3|contralat*mediast|hilar.*node|supraclav.*node)'
+Type: 'snomedct:5856006'
 ---
 Comments: ''
 Direction: ''
@@ -159,3 +225,15 @@ Direction: ''
 Lex: inferior_lobe_left
 Regex: 'linker\s{0,1}onder\s{0,1}(kwab|lob)|onder\s{0,1}(kwab|lob) link|\bLOK\b|\bLOL\b'
 Type: 'snomedct:41224006'
+---
+Comments: ''
+Direction: ''
+Lex: mention_left_body_side
+Regex: 'left|\dL\b|\d L\b'
+Type: 'snomedct:31156008'
+----
+Comments: ''
+Direction: ''
+Lex: mention_right_body_side
+Regex: 'right|\dR\b\d R\b'
+Type: 'snomedct:85421007'
