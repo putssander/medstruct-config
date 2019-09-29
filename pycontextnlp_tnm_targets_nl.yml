@@ -52,12 +52,12 @@ Lex: peripheral_lymph_node
 Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
 Type: 'snomedct:3074004'
 ---
-Comments: ''
-Direction: ''
-Lex: peripheral_lymph_node
-Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
-Type: 'snomedct:3074004'
----
+#Comments: ''
+#Direction: ''
+#Lex: peripheral_lymph_node
+#Regex: '(station (12|13|14)(L|R){0,1}\b)|(12|13|14|lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
+#Type: 'snomedct:3074004'
+#---
 Comments: ''
 Direction: ''
 Lex: peripheral_lymph_node
@@ -235,5 +235,5 @@ Type: 'snomedct:31156008'
 Comments: ''
 Direction: ''
 Lex: mention_right_body_side
-Regex: 'right|\dR\b\d R\b'
+Regex: 'right|\dR\b|\d R\b'
 Type: 'snomedct:85421007'
