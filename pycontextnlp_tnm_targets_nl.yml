@@ -231,7 +231,7 @@ Direction: ''
 Lex: mention_left_body_side
 Regex: 'left|\dL\b|\d L\b'
 Type: 'snomedct:31156008'
-----
+---
 Comments: ''
 Direction: ''
 Lex: mention_right_body_side
