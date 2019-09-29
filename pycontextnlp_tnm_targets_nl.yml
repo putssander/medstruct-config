@@ -202,16 +202,16 @@ Lex: inferior_lobe_left
 Regex: 'linker\s{0,1}onder\s{0,1}(kwab|lob)|onder\s{0,1}(kwab|lob) link|\bLOK\b|\bLOL\b'
 Type: 'snomedct:41224006'
 ---
-Comments: ''
+Comments: 'lets hope there are no liters described ;)'
 Direction: ''
 Lex: mention_left_body_side
-Regex: 'links|\d{1,2}L\b| \d{1,2} L\b|linker'
+Regex: 'links|\bL\b|linker'
 Type: 'snomedct:31156008'
 ---
 Comments: ''
 Direction: ''
 Lex: mention_right_body_side
-Regex: 'rechts|\d{1,2}R\b| \d{1,2} R\b|rechter'
+Regex: 'rechts|\bR\b|rechter'
 Type: 'snomedct:85421007'
 ---
 Comments: ''
