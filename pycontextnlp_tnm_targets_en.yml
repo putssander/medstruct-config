@@ -1,19 +1,19 @@
 Comments: ''
 Direction: ''
 Lex: concept_tumor
-Regex: '(tumor|tumour|node|nodule|mass|carcino|malign)'
+Regex: '(tumor|tumour|carcino|malign)'
 Type: 'snomedct:108369006'
 ---
 Comments: ''
 Direction: ''
 Lex: concept_involvement
-Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension in|extending in|expansion in|involvement of|infiltration of|involve|invading in|invas'
+Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension in|extending in|extends into|expansion in|involvement of|infiltration of|involve|invading in|invas'
 Type: 'snomedct:248448006'
 ---
 Comments: ''
 Direction: ''
 Lex: lymph_nodes
-Regex: 'lymph|lymph.*node|lymph node|subcarinal lymph node|nodal mass|adenop|paratracheal mass|mediastinal mass|mediastinal lymphadenopathy|mediastinal adenopathy'
+Regex: 'lymph|lymph.*node|lymphadenopathy|lymph node|subcarinal lymph node|nodal mass|adenop|AP-window|paratracheal mass|paratracheal node|paratracheal adenopathy|mediastinal mass|mediastinal lymphadenopathy|mediastinal adenopathy'
 Type: 'snomedct:59441001'
 ---
 Comments: ''
@@ -147,3 +147,9 @@ Direction: ''
 Lex: inferior_lobe_left
 Regex: 'inferior left lobe|inferior lobe left|lower left lobe|left lower lobe|lower lobe left|basal lung left|basal left lobe|\bLLL\b|\bILL\b'
 Type: 'snomedct:41224006'
+---
+Comments: ''
+Direction: ''
+Lex: concept_tumor_generic
+Regex: '(node|nodule|mass)'
+Type: 'snomedct:108369006'
