@@ -12,8 +12,68 @@ Type: 'snomedct:248448006'
 ---
 Comments: ''
 Direction: ''
+Lex: supraclavicular_lymph_node
+Regex: 'station {0,1}1|1(?= {0,1}(L|R|links|rechts))|(clavicular|supraclav).*(node|mass)'
+Type: 'snomedct:76838003'
+---
+Comments: ''
+Direction: ''
+Lex: mediastinal_lymph_node
+Regex: 'station {0,1}\b(2|3|4|8|9)|\b(2|3|4|8|9)(?= {0,1}(L|R|links|rechts))|(mediastinal|paraesophageal|ligament|azygos).*(node|mass)'
+Type: 'snomedct:62683002'
+---
+Comments: ''
+Direction: ''
+Lex: prevertebral_lymph_node
+Regex: 'prevertebral|3 p'
+Type: 'snomedct:196446004'
+---
+Comments: ''
+Direction: ''
+Lex: aortic_lymph_node
+Regex: 'station {0,1}\b(5|6)|\b(5|6|aortic|AP).*(node|mass)'
+Type: 'snomedct:35783009'
+---
+Comments: ''
+Direction: ''
+Lex: subcarinal_lymph_node
+Regex: 'station {0,1}\b7|(subcarinal|tracheobronch).*(node|mass)'
+Type: 'snomedct:28330007'
+---
+Comments: ''
+Direction: ''
+Lex: hilar_lymph_node
+Regex: 'station {0,1}\b(10|11)|\b(10|11)(?= {0,1}(L|R|links|rechts))|(hilar).*(node|mass)'
+Type: 'snomedct:3074004'
+---
+Comments: ''
+Direction: ''
+Lex: peripheral_lymph_node
+Regex: 'station {0,1}\b(12|13|14)|\b(12|13|14)(?=( {0,1}(L|R|links|rechts)))|(lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
+Type: 'snomedct:3074004'
+---
+Comments: ''
+Direction: ''
+Lex: n1_node
+Regex: '\bn1\b'
+Type: 'snomedct:53623008'
+---
+Comments: ''
+Direction: ''
+Lex: n2_node
+Regex: '\bn2\b|ips.*mediastinal|ips.subcar'
+Type: 'snomedct:46059003'
+---
+Comments: ''
+Direction: ''
+Lex: n3_node
+Regex: '\bn3\b|contralat*mediastinal|hilar.*node|supraclav.*node'
+Type: 'snomedct:5856006'
+---
+Comments: ''
+Direction: ''
 Lex: lymph_nodes
-Regex: 'lymph|lymph.*node|lymphadenopathy|lymph node|subcarinal lymph node|nodal mass|adenop|AP-window|paratracheal mass|paratracheal node|paratracheal adenopathy|mediastinal mass|mediastinal lymphadenopathy|mediastinal adenopathy'
+Regex: 'lymphadenopathy|lymph node|subcarinal lymph node|nodal mass|adenop|AP-window|paratracheal mass|paratracheal node|paratracheal adenopathy|mediastinal mass|mediastinal lymphadenopathy|mediastinal adenopathy'
 Type: 'snomedct:59441001'
 ---
 Comments: ''
@@ -153,3 +213,21 @@ Direction: ''
 Lex: concept_tumor_generic
 Regex: '(node|nodule|mass)'
 Type: 'snomedct:108369006'
+---
+Comments: 'lets hope there are no liters described ;)'
+Direction: ''
+Lex: mention_left_body_side
+Regex: 'links|linker|\bL\b'
+Type: 'snomedct:31156008'
+---
+Comments: ''
+Direction: ''
+Lex: mention_right_body_side
+Regex: 'rechts|rechter|\bR\b'
+Type: 'snomedct:85421007'
+---
+Comments: ''
+Direction: ''
+Lex: lymph_nodes
+Regex: 'lymph|lymph.*node'
+Type: 'snomedct:59441001'
