@@ -19,14 +19,20 @@ Type: 'snomedct:248448006'
 Comments: ''
 Direction: ''
 Lex: supraclavicular_lymph_node
-Regex: 'station {0,1}1|1 {0,1}(L|R|links|rechts)|(clavicular|supraclav).*(node|mass)'
+Regex: 'station {0,1}1|1(?= {0,1}(L|R|links|rechts))|(clavicular|supraclav).*(node|mass)'
 Type: 'snomedct:76838003'
 ---
 Comments: ''
 Direction: ''
 Lex: mediastinal_lymph_node
-Regex: 'station {0,1}\b(2|3|4|8|9)|\b(2|3|4|8|9) (L|R|links|rechts)|(mediastinal|paraesophageal|ligament|azygos).*(node|mass)'
+Regex: 'station {0,1}\b(2|3|4|8|9)|\b(2|3|4|8|9)(?= {0,1}(L|R|links|rechts))|(mediastinal|paraesophageal|ligament|azygos).*(node|mass)'
 Type: 'snomedct:62683002'
+---
+Comments: ''
+Direction: ''
+Lex: prevertebral_lymph_node
+Regex: 'prevertebral|3 p'
+Type: 'snomedct:196446004'
 ---
 Comments: ''
 Direction: ''
@@ -43,13 +49,13 @@ Type: 'snomedct:28330007'
 Comments: ''
 Direction: ''
 Lex: hilar_lymph_node
-Regex: 'station {0,1}\b(10|11)|\b(10|11) {0,1}(L|R|links|rechts)|(hilar).*(node|mass)'
+Regex: 'station {0,1}\b(10|11)|\b(10|11)(?= {0,1}(L|R|links|rechts))|(hilar).*(node|mass)'
 Type: 'snomedct:3074004'
 ---
 Comments: ''
 Direction: ''
 Lex: peripheral_lymph_node
-Regex: 'station {0,1}\b(12|13|14)|\b(12|13|14) {0,1}(L|R|links|rechts)|(lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
+Regex: 'station {0,1}\b(12|13|14)|\b(12|13|14)(?=( {0,1}(L|R|links|rechts)))|(lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
 Type: 'snomedct:3074004'
 ---
 Comments: ''
@@ -205,13 +211,13 @@ Type: 'snomedct:41224006'
 Comments: 'lets hope there are no liters described ;)'
 Direction: ''
 Lex: mention_left_body_side
-Regex: 'links| L |linker'
+Regex: 'links|linker|\bL\b'
 Type: 'snomedct:31156008'
 ---
 Comments: ''
 Direction: ''
 Lex: mention_right_body_side
-Regex: 'rechts| R |rechter'
+Regex: 'rechts|rechter|\bR\b'
 Type: 'snomedct:85421007'
 ---
 Comments: ''
