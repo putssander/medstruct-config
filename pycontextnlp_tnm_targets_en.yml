@@ -208,16 +208,10 @@ Lex: inferior_lobe_left
 Regex: 'inferior left lobe|inferior lobe left|lower left lobe|left lower lobe|lower lobe left|basal lung left|basal left lobe|\bLLL\b|\bILL\b'
 Type: 'snomedct:41224006'
 ---
-Comments: ''
-Direction: ''
-Lex: concept_tumor_generic
-Regex: '(node|nodule|mass)'
-Type: 'snomedct:108369006'
----
 Comments: 'lets hope there are no liters described ;)'
 Direction: ''
 Lex: mention_left_body_side
-Regex: 'links|linker|\bL\b'
+Regex: 'left|linker|\bL\b'
 Type: 'snomedct:31156008'
 ---
 Comments: ''
@@ -231,3 +225,9 @@ Direction: ''
 Lex: lymph_nodes
 Regex: 'lymph|lymph.*node'
 Type: 'snomedct:59441001'
+---
+Comments: ''
+Direction: ''
+Lex: concept_tumor_generic
+Regex: '(node|nodule|mass)'
+Type: 'snomedct:108369006'
