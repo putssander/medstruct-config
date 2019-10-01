@@ -85,3 +85,18 @@ restcontroller.enabled: true
 
 server:
   port: 5005
+
+thoracic.lymph-node-concepts:
+  supraclavicular: 'snomedct:76838003'
+  mediastinal: 'snomedct:62683002'
+  aortic: 'snomedct:35783009'
+  subcarinal: 'snomedct:28330007'
+  hilar: 'snomedct:3074004'
+  peribronchal: 'snomedct:3074004'
+  prevertrebral: 'snomedct:196446004'
+  measurement-size-post-fix: '-size'
+
+thoracic.lymph-node-n-map:
+  N1_NODES_IPS: 'snomedct:53623008'
+  N2_NODES_IPS: 'snomedct:46059003'
+  N3_NODES_CL: 'snomedct:5856006'
