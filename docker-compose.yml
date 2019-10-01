@@ -30,7 +30,7 @@ services:
     - medstruct-network
 
   medstruct-measurement-extractor:
-    image: putssander/medstruct-measurement-extractor:latest
+    image: putssander/medstruct-measurement-extractor:2.1
     container_name: medstruct-measurement-extractor
     expose:
     - '5004'
@@ -43,7 +43,7 @@ services:
     - medstruct-network
 
   medstruct-tnm-classifier:
-    image: putssander/medstruct-tnm-classifier:latest
+    image: putssander/medstruct-tnm-classifier:2.1
     container_name: medstruct-tnm-classifier
     expose:
     - '5005'
