@@ -13,7 +13,7 @@ Type: 'snomedct:248448006'
 Comments: ''
 Direction: ''
 Lex: lymph_nodes
-Regex: 'within*.the (mediast|paratracheal)|lymph.*(node|nodule|mass)|lymphadenopathy|nodal mass|adenop|AP(-| )window|paratracheal[ ]*(node|nodule|mass|adenopathy)|mediastinal[ ]*(mass|node|nodule|lymphadenopathy|adenopathy)|lymph'
+Regex: 'within*.the (mediast|paratracheal)|lymph.*(node|nodule|mass)|lymphadenopathy|nodal mass|adenop|AP(-| )window|aortic|aortapulmonary|paratracheal[ ]*(node|nodule|mass|adenopathy)|mediastinal[ ]*(mass|node|nodule|lymphadenopathy|adenopathy)|lymph'
 Type: 'snomedct:59441001'
 ---
 Comments: ''
