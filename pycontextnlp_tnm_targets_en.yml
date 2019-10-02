@@ -7,13 +7,13 @@ Type: 'snomedct:108369006'
 Comments: ''
 Direction: ''
 Lex: concept_involvement
-Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|extension in|extending in|extends into|expansion in|involvement of|infiltration of|involve|invading in|invas'
+Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|(extension|extends|extending|expansion)[ ]*(in|into)|(involvement|infiltration)[ ]*of|involve|invading in|invas'
 Type: 'snomedct:248448006'
 ---
 Comments: ''
 Direction: ''
 Lex: lymph_nodes
-Regex: 'lymph|lymph.*node|lymphadenopathy|lymph node|subcarinal lymph node|nodal mass|adenop|AP-window|paratracheal mass|paratracheal node|paratracheal adenopathy|mediastinal mass|mediastinal lymphadenopathy|mediastinal adenopathy'
+Regex: 'lymph|lymph.*node|lymphadenopathy|nodal mass|adenop|AP-window|paratracheal[ ]*(node|mass|adenopathy)|mediastinal[ ]*(mass|node|lymphadenopathy|adenopathy)'
 Type: 'snomedct:59441001'
 ---
 Comments: ''
