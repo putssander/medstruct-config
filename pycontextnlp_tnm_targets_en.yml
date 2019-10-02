@@ -13,7 +13,7 @@ Type: 'snomedct:248448006'
 Comments: ''
 Direction: ''
 Lex: lymph_nodes
-Regex: 'lymph.*(node|nodule|mass)|lymphadenopathy|nodal mass|adenop|AP(-| )window|paratracheal[ ]*(node|nodule|mass|adenopathy)|mediastinal[ ]*(mass|node|nodule|lymphadenopathy|adenopathy)|lymph'
+Regex: 'within*.the (mediast|paratracheal)|lymph.*(node|nodule|mass)|lymphadenopathy|nodal mass|adenop|AP(-| )window|paratracheal[ ]*(node|nodule|mass|adenopathy)|mediastinal[ ]*(mass|node|nodule|lymphadenopathy|adenopathy)|lymph'
 Type: 'snomedct:59441001'
 ---
 Comments: ''
@@ -37,7 +37,7 @@ Type: 'snomedct:46621007'
 Comments: ''
 Direction: ''
 Lex: obstructive_pneumonitis
-Regex: 'obstrucive pneumoni|infect.*verander|obstructive pneumonitis|obstructive infectious disease|obstructive pneumonia'
+Regex: 'obstrucive pneumoni|infect.*chang|obstructive pneumonitis|obstructive infectious disease|obstructive pneumonia'
 Type: 'snomedct:205237003'
 ---
 Comments: ''
