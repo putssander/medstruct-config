@@ -67,6 +67,7 @@ lung-tnm-classification:
     - "probable_negated_existence"
     - "indication"
     - "ambivalent_existence"
+    - "conj"
     historical:
     - "historical"
     exist-cncept-blacklist-modifiers:
