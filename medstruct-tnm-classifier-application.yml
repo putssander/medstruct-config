@@ -70,7 +70,7 @@ lung-tnm-classification:
     - "conj"
     historical:
     - "historical"
-    exist-cncept-blacklist-modifiers:
+    exist-concept-blacklist-modifiers:
     - "limited_amount"
     exist-concept-blacklist:
     - "snomedct:46621007"
