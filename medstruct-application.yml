@@ -39,7 +39,10 @@ tnm-classification:
 medstruct:
   xlsx:
     text-column: 'report'
-    label-column: 'GOLD'
+    label-tnm-column: 'GOLD'
+    label-t-column: 'GOLD-T'
+    label-n-column: 'GOLD-N'
+    label-m-column: 'GOLD-M'
   results:
     confusion-matrix-prefix: 'confusion-matrix'
     confusion-matrix-eps: false
