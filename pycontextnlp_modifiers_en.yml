@@ -1919,12 +1919,12 @@ Lex: other possibilities of
 Regex: ''
 Type: CONJ
 ---
-Comments: ''
-Direction: terminate
-Lex: possibility of
-Regex: ''
-Type: CONJ
----
+#Comments: ''
+#Direction: terminate
+#Lex: possibility of
+#Regex: ''
+#Type: CONJ
+#---
 Comments: ''
 Direction: terminate
 Lex: reason for
@@ -2392,3 +2392,9 @@ Unnamed-4: ""
 Unnamed-5: ""
 Unnamed-6: ""
 Codes: ""
+---
+Comments: ''
+Direction: forward
+Lex: 'possibly|possibility of|possibility that'
+Regex: ''
+Type: AMBIVALENT_EXISTENCE
