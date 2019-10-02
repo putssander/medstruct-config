@@ -5,8 +5,8 @@ services:
     image: maastrodocker/pycontextnlp:latest
     container_name: pycontext-json-nlp-medstruct
     environment:
-    - MODIFIERS=https://raw.githubusercontent.com/putssander/medstruct-config/BOSTON//pycontextnlp_modifiers_en.yml
-    - TARGETS=https://raw.githubusercontent.com/putssander/medstruct-config/BOSTON/pycontextnlp_tnm_targets_en.yml
+    - MODIFIERS=/data/pycontextnlp_modifiers_en.yml
+    - TARGETS=/data/pycontextnlp_tnm_targets_en.yml
     expose:
     - '9999'
     ports:
@@ -14,6 +14,8 @@ services:
     - '9999:9999'
     networks:
     - medstruct-network
+    volumes:
+    - "/c/Users/marti/OneDrive/Documenten/Mijn GIT/medstruct-config:/data"   
     # entrypoint: python /app/pyConTextNLP/io/tcpService.py --port=9999
 
   spacy-json-nlp-medstruct:
