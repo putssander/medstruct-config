@@ -91,7 +91,7 @@ Type: 'snomedct:3711007'
 Comments: ''
 Direction: ''
 Lex: trachea
-Regex: 'windpipe|trachea'
+Regex: 'windpipe|\btrachea\b'
 Type: 'snomedct:44567001'
 ---
 Comments: ''
@@ -115,7 +115,7 @@ Type: 'snomedct:3572006'
 Comments: ''
 Direction: ''
 Lex: carina
-Regex: 'carina'
+Regex: '\bcarina\b'
 Type: 'snomedct:28700002'
 ---
 Comments: ''
