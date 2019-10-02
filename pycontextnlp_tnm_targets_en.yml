@@ -13,7 +13,7 @@ Type: 'snomedct:248448006'
 Comments: ''
 Direction: ''
 Lex: lymph_nodes
-Regex: 'lymph|lymph.*node|lymphadenopathy|nodal mass|adenop|AP(-| )window|paratracheal[ ]*(node|mass|adenopathy)|mediastinal[ ]*(mass|node|lymphadenopathy|adenopathy)'
+Regex: 'lymph.*node|lymphadenopathy|nodal mass|adenop|AP(-| )window|paratracheal[ ]*(node|mass|adenopathy)|mediastinal[ ]*(mass|node|lymphadenopathy|adenopathy)|lymph'
 Type: 'snomedct:59441001'
 ---
 Comments: ''
