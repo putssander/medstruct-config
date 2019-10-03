@@ -2398,3 +2398,9 @@ Direction: forward
 Lex: 'possibly|possibility of|possibility that'
 Regex: ''
 Type: AMBIVALENT_EXISTENCE
+---
+Comments: ''
+Direction: forward
+Lex:
+Regex: 'subcentimet'
+Type: DEFINITE_NEGATED_EXISTENCE
