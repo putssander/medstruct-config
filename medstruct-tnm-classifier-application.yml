@@ -69,13 +69,13 @@ lung-tnm-classification:
     - "ambivalent_existence"
     historical:
     - "historical"
-    exist-cncept-blacklist-modifiers:
+    exist-concept-blacklist-modifiers:
     - "limited_amount"
     exist-concept-blacklist:
     - "snomedct:46621007"
 
   min-tumor-size: 1
-  lung-size-blacklist-pattern: '(pulmonary artery|aneurysm|cyst|adenoma|adrenal|liver|kidney|spleen|colon|rectum|sigmoid|prostate|ovary|ovaries|brain|breast|thyroid|isthmus)'
+  lung-size-blacklist-pattern: '(pulmonary artery|aneurysm|cyst|adenoma|adrenal|liver|kidney|spleen|colon|rectum|sigmoid|prostate|ovary|ovaries|brain|breast|thyroid|isthmus|ectatic|ectasia|parotid gland)'
   apply-lung-size-blacklist-pattern: true
   secondary-tumor-blacklist-pattern: "(.*)nodu(.*)"
   apply-secondary-tumor-blacklist-pattern: true
