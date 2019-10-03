@@ -13,13 +13,13 @@ Type: 'snomedct:248448006'
 Comments: ''
 Direction: ''
 Lex: supraclavicular_lymph_node
-Regex: '(station|level) {0,1}\b1\b|\b1\b(?= {0,1}(L|R|links|rechts))|(node|mass|nodal|adenopat).*(supraclav|low(er)? cervical|sternal)|(supraclav|low(er)? cervical|sternal).*(node|mass|nodal|adenopat)'
+Regex: '(station|level) {0,1}\b1\b|\b1\b(?= {0,1}(L|R|left|right))|(node|mass|nodal|adenopat).*(supraclav|low(er)? cervical|sternal)|(supraclav|low(er)? cervical|sternal).*(node|mass|nodal|adenopat)'
 Type: 'snomedct:76838003'
 ---
 Comments: ''
 Direction: ''
 Lex: mediastinal_lymph_node
-Regex: '(station|level) {0,1}\b(2|3|4|8|9)\b|\b(2|3|4|8|9)\b(?= {0,1}(L|R|links|rechts))|(mediastinal|paraesophageal|ligament|azygos).*(node|mass)'
+Regex: '(station|level) {0,1}\b(2|3|4|8|9)\b|\b(2|3|4|8|9)\b(?= {0,1}(L|R|left|right))|(node|mass|nodal|adenopat).*(para(-)?tracheal|pre(-)?vascular|mediastinal|para(-)?(o)?esophag|ligament|azygo|pulmonal)|(para(-)?tracheal|pre(-)?vascular|mediastinal|para(-)?(o)?esophag|ligament|azygos|pulmonal).*(node|mass|nodal|adenopat)'
 Type: 'snomedct:62683002'
 ---
 Comments: ''
@@ -43,13 +43,13 @@ Type: 'snomedct:28330007'
 Comments: ''
 Direction: ''
 Lex: hilar_lymph_node
-Regex: 'station {0,1}\b(10|11)|\b(10|11)(?= {0,1}(L|R|links|rechts))|(hilar).*(node|mass)'
+Regex: 'station {0,1}\b(10|11)|\b(10|11)(?= {0,1}(L|R|left|right))|(hilar).*(node|mass)'
 Type: 'snomedct:3074004'
 ---
 Comments: ''
 Direction: ''
 Lex: peripheral_lymph_node
-Regex: 'station {0,1}\b(12|13|14)|\b(12|13|14)(?=( {0,1}(L|R|links|rechts)))|(lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
+Regex: 'station {0,1}\b(12|13|14)|\b(12|13|14)(?=( {0,1}(L|R|left|right)))|(lobar|segmental|pulmonar|peribronchial|peripheral).*(node|mass)'
 Type: 'snomedct:3074004'
 ---
 Comments: ''
