@@ -13,7 +13,7 @@ Type: 'snomedct:248448006'
 Comments: ''
 Direction: ''
 Lex: supraclavicular_lymph_node
-Regex: 'station {0,1}1|1(?= {0,1}(L|R|links|rechts))|(clavicular|supraclav).*(node|mass)'
+Regex: '(station|level) {0,1}1|1(?= {0,1}(L|R|links|rechts))|(supraclav|low(er)? cervical|sternal).*(node|mass|nodal|adenopat)|(supraclav|low(er)? cervical|sternal).*(node|mass|nodal|adenopat)'
 Type: 'snomedct:76838003'
 ---
 Comments: ''
