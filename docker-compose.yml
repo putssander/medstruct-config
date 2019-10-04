@@ -45,7 +45,7 @@ services:
     - medstruct-network
 
   medstruct-tnm-classifier:
-    image: putssander/medstruct-tnm-classifier:2.1
+    image: putssander/medstruct-tnm-classifier:2.2
     container_name: medstruct-tnm-classifier
     expose:
     - '5005'
