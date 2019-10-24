@@ -1,22 +1,30 @@
 version: '3.7'
 
 services:
-  pycontext-json-nlp-medstruct:
-    image: maastrodocker/pycontextnlp:latest
-    container_name: pycontext-json-nlp-medstruct
-    environment:
-    - MODIFIERS=/data/pycontextnlp_modifiers_en.yml
-    - TARGETS=/data/pycontextnlp_tnm_targets_en.yml
-    expose:
-    - '9999'
-    ports:
-    - '5003:5003'
-    - '9999:9999'
-    networks:
-    - medstruct-network
-    volumes:
-    - "/c/Users/marti/OneDrive/Documenten/Mijn GIT/medstruct-config:/data"   
-    # entrypoint: python /app/pyConTextNLP/io/tcpService.py --port=9999
+    medstruct-gui:
+      image: putssander/medstruct-gui:0.2
+      container_name: medstruct-gui
+      environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      expose:
+      - '8080'
+      ports:
+      - '8080:8080'
+      networks:
+      - medstruct-network
+
+
+    medstruct-api:
+      image: putssander/medstruct:2.1
+      container_name: medstruct-api
+      expose:
+      - '8081'
+      ports:
+      - '8081:8081'
+      volumes:
+      - './medstruct-application.yml:/app/application.yml'
+      networks:
+      - medstruct-network
 
   spacy-json-nlp-medstruct:
     image: putssander/spacy-json-nlp:all_v2
@@ -31,6 +39,38 @@ services:
     networks:
     - medstruct-network
 
+  pycontext-json-nlp-medstruct-en:
+    image: maastrodocker/pycontextnlp:latest
+    container_name: pycontext-json-nlp-medstruct-en
+    environment:
+    - MODIFIERS=/data/pycontextnlp_modifiers_en.yml
+    - TARGETS=/data/pycontextnlp_tnm_targets_en.yml
+    expose:
+    - '5030'
+    ports:
+    - '5030:5003'
+    networks:
+    - medstruct-network
+    volumes:
+    - "./:/data"
+    # entrypoint: python /app/pyConTextNLP/io/tcpService.py --port=9999
+
+  pycontext-json-nlp-medstruct-nl:
+    image: maastrodocker/pycontextnlp:latest
+    container_name: pycontext-json-nlp-medstruct-nl
+    environment:
+    - MODIFIERS=/data/pycontextnlp_modifiers_nl.yml
+    - TARGETS=/data/pycontextnlp_tnm_targets_nl.yml
+    expose:
+    - '5031'
+    ports:
+    - '5031:5003'
+    networks:
+    - medstruct-network
+    volumes:
+    - "./:/data"
+    # entrypoint: python /app/pyConTextNLP/io/tcpService.py --port=9999
+
   medstruct-measurement-extractor:
     image: putssander/medstruct-measurement-extractor:2.1
     container_name: medstruct-measurement-extractor
@@ -40,9 +80,11 @@ services:
     - '5004:5004'
     environment:
     - SPRING_PROFILES_ACTIVE=rest
-    - SPRING_CONFIG_LOCATION=https://raw.githubusercontent.com/putssander/medstruct-config/BOSTON-N/medstruct-measurement-extractor-application.yml
+    - SPRING_CONFIG_LOCATION=/data/medstruct-measurement-extractor-application.yml
     networks:
     - medstruct-network
+    volumes:
+    - "./:/data"
 
   medstruct-tnm-classifier:
     image: putssander/medstruct-tnm-classifier:2.2
@@ -54,30 +96,6 @@ services:
     environment:
     - SPRING_PROFILES_ACTIVE=rest
     - SPRING_CONFIG_LOCATION=https://raw.githubusercontent.com/putssander/medstruct-config/BOSTON-N/medstruct-tnm-classifier-application.yml
-    networks:
-    - medstruct-network
-
-  medstruct-api:
-    image: putssander/medstruct:2.0
-    container_name: medstruct-api
-    expose:
-    - '8081'
-    ports:
-    - '8081:8081'
-    volumes:
-    - './medstruct-application.yml:/app/application.yml'
-    networks:
-    - medstruct-network
-
-  medstruct-gui:
-    image: putssander/medstruct-gui:0.1
-    container_name: medstruct-gui
-    environment:
-    - SPRING_PROFILES_ACTIVE=docker
-    expose:
-    - '8080'
-    ports:
-    - '8080:8080'
     networks:
     - medstruct-network
 
