@@ -1,30 +1,29 @@
 version: '3.7'
 
 services:
-    medstruct-gui:
-      image: putssander/medstruct-gui:0.2
-      container_name: medstruct-gui
-      environment:
-      - SPRING_PROFILES_ACTIVE=docker
-      expose:
-      - '8080'
-      ports:
-      - '8080:8080'
-      networks:
-      - medstruct-network
+  medstruct-gui:
+    image: putssander/medstruct-gui:0.0.1-SNAPSHOT
+    container_name: medstruct-gui
+    environment:
+    - SPRING_PROFILES_ACTIVE=docker
+    expose:
+    - '8080'
+    ports:
+    - '8080:8080'
+    networks:
+    - medstruct-network
 
-
-    medstruct-api:
-      image: putssander/medstruct:2.1
-      container_name: medstruct-api
-      expose:
-      - '8081'
-      ports:
-      - '8081:8081'
-      volumes:
-      - './medstruct-application.yml:/app/application.yml'
-      networks:
-      - medstruct-network
+  medstruct-api:
+    image: putssander/medstruct:2.1
+    container_name: medstruct-api
+    expose:
+    - '8081'
+    ports:
+    - '8081:8081'
+    networks:
+    - medstruct-network
+    volumes:
+    - './medstruct-application.yml:/app/application.yml'
 
   spacy-json-nlp-medstruct:
     image: putssander/spacy-json-nlp:all_v2
@@ -46,14 +45,13 @@ services:
     - MODIFIERS=/data/pycontextnlp_modifiers_en.yml
     - TARGETS=/data/pycontextnlp_tnm_targets_en.yml
     expose:
-    - '5030'
+    - '5003'
     ports:
     - '5030:5003'
     networks:
     - medstruct-network
     volumes:
     - "./:/data"
-    # entrypoint: python /app/pyConTextNLP/io/tcpService.py --port=9999
 
   pycontext-json-nlp-medstruct-nl:
     image: maastrodocker/pycontextnlp:latest
@@ -62,17 +60,16 @@ services:
     - MODIFIERS=/data/pycontextnlp_modifiers_nl.yml
     - TARGETS=/data/pycontextnlp_tnm_targets_nl.yml
     expose:
-    - '5031'
+    - '5003'
     ports:
     - '5031:5003'
     networks:
     - medstruct-network
     volumes:
     - "./:/data"
-    # entrypoint: python /app/pyConTextNLP/io/tcpService.py --port=9999
 
   medstruct-measurement-extractor:
-    image: putssander/medstruct-measurement-extractor:2.1
+    image: putssander/medstruct-measurement-extractor:2.1.0
     container_name: medstruct-measurement-extractor
     expose:
     - '5004'
@@ -87,7 +84,7 @@ services:
     - "./:/data"
 
   medstruct-tnm-classifier:
-    image: putssander/medstruct-tnm-classifier:2.2
+    image: putssander/medstruct-tnm-classifier:2.2.0
     container_name: medstruct-tnm-classifier
     expose:
     - '5005'
@@ -95,9 +92,11 @@ services:
     - '5005:5005'
     environment:
     - SPRING_PROFILES_ACTIVE=rest
-    - SPRING_CONFIG_LOCATION=https://raw.githubusercontent.com/putssander/medstruct-config/BOSTON-N/medstruct-tnm-classifier-application.yml
+    - SPRING_CONFIG_LOCATION=/data/medstruct-tnm-classifier-application.yml
     networks:
     - medstruct-network
+    volumes:
+    - "./:/data"
 
 networks:
   medstruct-network:

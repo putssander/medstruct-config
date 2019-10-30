@@ -18,6 +18,16 @@ simple-sectionizer:
     - 'musculoskeletal:'
   boston_style_sectionizer: true
 
+#simple-sectionizer:
+#  regex_whitelist_required:
+#    - 'thorax:'
+#  regex_whitelist_optional:
+#    - 'conclusie:'
+#  regex_blacklist:
+#    - 'gegevens:'
+#    - 'vraagstelling:'
+#  boston_style_sectionizer: false
+
 preprocessor:
   replace-abbreviations:
     "ca.": "circa"
@@ -29,37 +39,46 @@ tnm-classification:
     - 'involvedText'
     - 'presentText'
     - 'satelliteNodules'
-    - 'tumorsInDiffentLobesIpsilateral'
     - 'tumors'
+    - 'tumorsInDiffentLobesIpsilateral'
     - 'lymphNodes'
     - 'tnmT'
     - 'tnmN'
     - 'tnmM'
 
 medstruct:
+  lang: 'en'
   xlsx:
     text-column: 'report'
     label-tnm-column: 'GOLD'
     label-t-column: 'GOLD-T'
     label-n-column: 'GOLD-N'
     label-m-column: 'GOLD-M'
+
   results:
     confusion-matrix-prefix: 'confusion-matrix'
     confusion-matrix-eps: false
     output-dir: '/data/results'
 
 spacy:
-  model: en_core_web_sm
+  models:
+    "en": "en_core_web_sm"
+    "nl": "nl_core_news_sm"
+#  url: 'http://localhost:5001/token_list'
   url: 'http://spacy-json-nlp-medstruct:5001/token_list'
 
 pycontextnlp:
-  # host: 'localhost'
-  host: 'pycontext-json-nlp-medstruct'
-  # port: 9999
-  url: 'http://pycontext-json-nlp-medstruct:5003/json-nlp'
+  url-lang-map:
+#    "en": 'http://localhost:5030/json-nlp'
+#    "nl": 'http://localhost:5031/json-nlp'
+    "en": 'http://pycontext-json-nlp-medstruct-en:5003/json-nlp'
+    "nl": 'http://pycontext-json-nlp-medstruct-nl:5003/json-nlp'
+
 
 medstruct-measurement-extractor:
+#  url: 'http://localhost:5004/api/json-nlp/measurements'
   url: 'http://medstruct-measurement-extractor:5004/api/json-nlp/measurements'
 
 medstruct-tnm-client:
+#  url: 'http://localhost:5005/api/json-nlp/tnm-lung'
   url: 'http://medstruct-tnm-classifier:5005/api/json-nlp/tnm-lung'
