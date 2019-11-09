@@ -1,32 +1,34 @@
-simple-sectionizer:
-  regex_whitelist_required:
-    - 'chest:'
-    - 'lung and pleura:'
-    - 'mediastinum:'
-  regex_whitelist_optional:
-    - 'impression:'
-  regex_blacklist:
-    - 'comparison:'
-    - 'indication:'
-    - 'radiopharmaceutical:'
-    - 'dose:'     
-    - 'technique:'
-    - 'blood glucose:' 
-    - 'abdomen:'
-    - 'abdomen/pelvis:'
-    - 'pelvis:'
-    - 'musculoskeletal:'
-  boston_style_sectionizer: true
-
 #simple-sectionizer:
 #  regex_whitelist_required:
-#    - 'thorax:'
+#    - 'chest:'
+#    - 'lung and pleura:'
+#    - 'mediastinum:'
 #  regex_whitelist_optional:
-#    - 'conclusie:'
+#    - 'impression:'
 #  regex_blacklist:
-#    - 'gegevens:'
-#    - 'vraagstelling:'
-#  boston_style_sectionizer: false
+#    - 'comparison:'
+#    - 'indication:'
+#    - 'radiopharmaceutical:'
+#    - 'dose:'
+#    - 'technique:'
+#    - 'blood glucose:'
+#    - 'abdomen:'
+#    - 'abdomen/pelvis:'
+#    - 'pelvis:'
+#    - 'musculoskeletal:'
+#  report_style: 'boston'
+#  enabled: true
+
+simple-sectionizer:
+  regex_whitelist_required:
+    - 'thorax:'
+  regex_whitelist_optional:
+    - 'conclusie:'
+  regex_blacklist:
+    - 'gegevens:'
+    - 'vraagstelling:'
+  report_style: 'mumc'
+  enabled: true
 
 preprocessor:
   replace-abbreviations:
@@ -80,5 +82,5 @@ medstruct-measurement-extractor:
   url: 'http://medstruct-measurement-extractor:5004/api/json-nlp/measurements'
 
 medstruct-tnm-client:
-#  url: 'http://localhost:5005/api/json-nlp/tnm-lung'
-  url: 'http://medstruct-tnm-classifier:5005/api/json-nlp/tnm-lung'
+# url: 'http://localhost:5005/api/classify/tnm/lung8/jsonlp'
+  url: 'http://medstruct-tnm-classifier:5005/api/classify/tnm/lung8/jsonlp'

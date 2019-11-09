@@ -7,7 +7,7 @@ Extract structure from medical narrative (Clinical NLP)
 Includes:
 
 - A rule-based algorithm to perform lung cancer t-stage classification based on ['Lung - Cancer TNM 8th edition'](http://www.radiologyassistant.nl/en/p58ef5eeb172c8/lung-cancer-tnm-8th-edition.html). 
-  Supported languages: Dutch, English
+  Supported languages: Nederlands, English
     
 ### Requirements
 
