@@ -26,7 +26,6 @@ lung-tnm-classification:
   - "snomedct:76848001"
 
   conceptsPresentT3:
-  - "snomedct:396408009"
 
   conceptsInvolvementT4:
   - "snomedct:5798000"
