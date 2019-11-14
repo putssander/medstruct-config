@@ -5,13 +5,15 @@ services:
     image: putssander/medstruct-gui:0.0.1-SNAPSHOT
     container_name: medstruct-gui
     environment:
-    - SPRING_PROFILES_ACTIVE=docker
+    - SPRING_PROFILES_ACTIVE=docker,h2file
     expose:
     - '8080'
     ports:
     - '8080:8080'
     networks:
     - medstruct-network
+    volumes:
+      - "./medstruct-gui:/data"
 
   medstruct-api:
     image: putssander/medstruct:2.1
@@ -23,7 +25,7 @@ services:
     networks:
     - medstruct-network
     volumes:
-    - './medstruct-application.yml:/app/application.yml'
+    - './medstruct/medstruct-application.yml:/app/application.yml'
 
   spacy-json-nlp-medstruct:
     image: putssander/spacy-json-nlp:all_v2
@@ -51,7 +53,7 @@ services:
     networks:
     - medstruct-network
     volumes:
-    - "./:/data"
+    - "./pycontextnlp:/data"
 
   pycontext-json-nlp-medstruct-nl:
     image: maastrodocker/pycontextnlp:latest
@@ -66,7 +68,7 @@ services:
     networks:
     - medstruct-network
     volumes:
-    - "./:/data"
+    - "./pycontextnlp:/data"
 
   medstruct-measurement-extractor:
     image: putssander/medstruct-measurement-extractor:2.1.0
@@ -81,7 +83,7 @@ services:
     networks:
     - medstruct-network
     volumes:
-    - "./:/data"
+    - "./medstruct-measurement-extractor:/data"
 
   medstruct-tnm-classifier:
     image: putssander/medstruct-tnm-classifier:2.2.1
@@ -96,7 +98,7 @@ services:
     networks:
     - medstruct-network
     volumes:
-    - "./:/data"
+    - "./medstruct-tnm-classifier:/data"
 
 networks:
   medstruct-network:
