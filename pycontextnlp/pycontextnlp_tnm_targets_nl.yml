@@ -13,7 +13,7 @@ Type: 'snomedct:108369006_t4'
 Comments: ''
 Direction: ''
 Lex: concept_involvement
-Regex: 'aan(ge)?tast|destructie|(door|in)(ge)?groei|uitbreiding|betrokken|invade|invasie|induratie'
+Regex: 'aan(ge)?tast|destructie|(door|in)(ge)?groei|uitbreiding|betrokken|invade|invasie|induratie|groeit (door|in)'
 Type: 'snomedct:248448006'
 ---
 Comments: ''
@@ -157,7 +157,7 @@ Type: 'snomedct:44567001'
 Comments: ''
 Direction: ''
 Lex: recurrent_laryngeal_nerve
-Regex: 'recurrens'
+Regex: 'recurrens|linguale zenuw'
 Type: 'snomedct:731050007'
 ---
 Comments: ''

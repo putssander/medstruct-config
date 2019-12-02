@@ -7,7 +7,7 @@ Type: 'snomedct:108369006'
 Comments: ''
 Direction: ''
 Lex: concept_involvement
-Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|(extension|extends|extending|expansion)[ ]*(in|into)|(involvement|infiltration)[ ]*of|involve|invading in|invas'
+Regex: 'affecting|attacking|injuring|destruct|ingrowth|growth|(extension|extends|extending|expansion)[ ]*(in|into)|(involvement|infiltration)[ ]*of|involve|invading in|invas|invades'
 Type: 'snomedct:248448006'
 ---
 Comments: ''
@@ -121,7 +121,7 @@ Type: 'snomedct:396408009'
 Comments: ''
 Direction: ''
 Lex: diafragm
-Regex: 'diafragm|midriff'
+Regex: 'diaphragm'
 Type: 'snomedct:5798000'
 ---
 Comments: ''
