@@ -1,19 +1,19 @@
 version: '3.7'
 
 services:
-  medstruct-gui:
-    image: putssander/medstruct-gui:0.0.1-SNAPSHOT
-    container_name: medstruct-gui
-    environment:
-    - SPRING_PROFILES_ACTIVE=docker,h2file
-    expose:
-    - '8080'
-    ports:
-    - '8080:8080'
-    networks:
-    - medstruct-network
-    volumes:
-      - "./medstruct-gui:/data"
+#  medstruct-gui:
+#    image: putssander/medstruct-gui:0.0.1-SNAPSHOT
+#    container_name: medstruct-gui
+#    environment:
+#    - SPRING_PROFILES_ACTIVE=docker,h2file
+#    expose:
+#    - '8080'
+#    ports:
+#    - '8080:8080'
+#    networks:
+#    - medstruct-network
+#    volumes:
+#      - "./medstruct-gui:/data"
 
   medstruct-api:
     image: putssander/medstruct:2.1

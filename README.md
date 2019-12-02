@@ -13,6 +13,23 @@ Includes:
 
 - Docker
 
+### Configuration
+
+#### pyContextNLP
+
+To change modifiers or targets, edit the corresponding files for your language in ./pycontextnlp
+Regex has to be defined using single quotes '' (no double quotes "")
+
+      Lex: mogelijk
+      Type: PROBABLE_EXISTENCE
+      Regex: 'mogelijk'
+      Direction: bidirectional
+      Unnamed-4: 2/28/2013
+      Unnamed-5: ""
+      Unnamed-6: ""
+      Codes: ""
+    ---
+
 ### RUN 
 
     docker network create medstruct-network
