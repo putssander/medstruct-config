@@ -157,7 +157,7 @@ Type: 'snomedct:44567001'
 Comments: ''
 Direction: ''
 Lex: recurrent_laryngeal_nerve
-Regex: 'recurrens|linguale zenuw'
+Regex: 'recurrens'
 Type: 'snomedct:731050007'
 ---
 Comments: ''
