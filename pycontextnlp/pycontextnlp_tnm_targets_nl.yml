@@ -18,44 +18,128 @@ Type: 'snomedct:248448006'
 ---
 Comments: ''
 Direction: ''
-Lex: supraclavicular_lymph_node
-Regex: '(station|level) {0,1}1|1(?= {0,1}(L|R|links|rechts))|(claviculair|supraclav).*(lymf|klier|adenopathi)|(lymf|klier|adenopathi).*(claviculair|supraclav)'
+Lex: thorax-region-1
+Regex: '(station|level) {0,1}\b(1)|\b(1)(?=( {0,1}(L|R|links|rechts)))|supraclaviculair|cervicaal|sternaal'
+Type: 'none:thorax-region-1'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-2
+Regex: '(station|level) {0,1}\b(2)|\b(2)(?=( {0,1}(L|R|links|rechts)))|paratracheaal|hoog paratracheaal'
+Type: 'none:thorax-region-2'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-3a
+Regex: '(station|level) {0,1}\b(3a)|\b(3a)(?=( {0,1}(L|R|links|rechts)))|pre-{0,1}vasculair'
+Type: 'none:thorax-region-3a'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-3p
+Regex: '(station|level) {0,1}\b(3p)|\b(3p)(?=( {0,1}(L|R|links|rechts)))|pre-{0,1}vertrebra'
+Type: 'none:thorax-region-3p'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-4
+Regex: '(station|level) {0,1}\b(4)|\b(4)(?=( {0,1}(L|R|links|rechts)))|paratrachea|paratrachea lager'
+Type: 'none:thorax-region-4'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-5
+Regex: '(station|level) {0,1}\b(5)|sub-{0,1}aortaal|(AP|aorta-{0,1}pulmona)-{0,1}(window|venster)'
+Type: 'none:thorax-region-5'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-6
+Regex: '(station|level) {0,1}\b(6)|para-{0,1}aorta'
+Type: 'none:thorax-region-6'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-7
+Regex: '(station|level) {0,1}\b(7)|\b(7)(?=( {0,1}(L|R|links|rechts)))|sub-{0,1}carina'
+Type: 'none:thorax-region-7'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-8
+Regex: '(station|level) {0,1}\b(8)|\b(8)(?=( {0,1}(L|R|links|rechts)))|oesofagea'
+Type: 'none:thorax-region-8'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-9
+Regex: '(station|level) {0,1}\b(9)|\b(9)(?=( {0,1}(L|R|links|rechts)))|pulmonair ligament'
+Type: 'none:thorax-region-9'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-10
+Regex: '(station|level) {0,1}\b(10)|\b(10)(?=( {0,1}(L|R|links|rechts)))|hilair'
+Type: 'none:thorax-region-10'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-region-11
+Regex: '(station|level) {0,1}\b(11)|\b(11)(?=( {0,1}(L|R|links|rechts)))|hilair'
+Type: 'none:thorax-region-11'
+---
+Comments: ''
+Direction: ''
+Lex: level-12
+Regex: '(station|level) {0,1}\b(12)|\b(12)(?=( {0,1}(L|R|links|rechts)))|hilair'
+Type: 'none:thorax-region-12'
+---
+Comments: ''
+Direction: ''
+Lex: level-13
+Regex: '(station|level) {0,1}\b(13)|\b(13)(?=( {0,1}(L|R|links|rechts)))|hilair'
+Type: 'none:thorax-region-13'
+---
+Comments: ''
+Direction: ''
+Lex: level-14
+Regex: '(station|level) {0,1}\b(14)|\b(14)(?=( {0,1}(L|R|links|rechts)))|hilair'
+Type: 'none:thorax-region-14'
+---
+Comments: ''
+Direction: ''
+Lex: region_supraclavicular
+Regex: 'claviculair|supraclav'
 Type: 'snomedct:76838003'
 ---
 Comments: ''
 Direction: ''
-Lex: mediastinal_lymph_node
-Regex: '(station|level) {0,1}\b(2|3|4|8|9)|\b(2|3|4|8|9)(?= {0,1}(L|R|links|rechts))|(mediastinal|paraesophageal|ligament|azygos).*(lymf|klier|adenopathi)|(lymf|klier|adenopathi).*(mediastinal|paraesophageal|ligament|azygos)'
+Lex: region_mediastinal
+Regex: 'mediastinaal|mediastinal'
 Type: 'snomedct:62683002'
 ---
 Comments: ''
 Direction: ''
-Lex: prevertebral_lymph_node
-Regex: 'prevertebral|3 p'
+Lex: region_prevertebral
+Regex: 'prevertebraal|prevertebral'
 Type: 'snomedct:196446004'
 ---
 Comments: ''
 Direction: ''
-Lex: aortic_lymph_node
-Regex: '(station|level) {0,1}\b(5|6)|\b(5|6|aortic|AP).*(lymf|klier|adenopathi)|(lymf|klier|adenopathi).*(station|level) {0,1}\b(5|6)'
+Lex: region_aortic
+Regex: 'aortale|aortaal'
 Type: 'snomedct:35783009'
 ---
 Comments: ''
 Direction: ''
-Lex: subcarinal_lymph_node
-Regex: '(station|level) {0,1}\b7|(subcarinal|tracheobronch).*(lymf|klier|adenopathi)|(subcarinal|tracheobronch).*(station|level) {0,1}\b7'
+Lex: region_subcarinal
+Regex: 'sub-{0,1}carinal'
 Type: 'snomedct:28330007'
 ---
 Comments: ''
 Direction: ''
-Lex: hilar_lymph_node
-Regex: '(station|level) {0,1}\b(10|11)|\b(10|11)(?= {0,1}(L|R|links|rechts))|(hilar).*(lymf|klier|adenopathi)|(lymf|klier|adenopathi).*(hilar)'
-Type: 'snomedct:3074004'
----
-Comments: ''
-Direction: ''
-Lex: peripheral_lymph_node
-Regex: '(station|level) {0,1}\b(12|13|14)|\b(12|13|14)(?=( {0,1}(L|R|links|rechts)))|(lobar|segmental|pulmonar|peribronchial|peripheral).*(lymf|klier|adenopathi)|(lymf|klier|adenopathi).*(lobar|segmental|pulmonar|peribronchial|peripheral)'
+Lex: region_hilar
+Regex: 'hilair'
 Type: 'snomedct:3074004'
 ---
 #Comments: ''
@@ -229,5 +313,11 @@ Type: 'snomedct:59441001'
 Comments: ''
 Direction: ''
 Lex: lymph_nodes_pathologic
-Regex: 'pathologisch|vergroot|vergrot|adropathi|afwijkend|metastase'
+Regex: 'pathologisch|vergroot|vergrot|afwijkend|metastase'
+Type: 'snomedct:59441001'
+---
+Comments: ''
+Direction: ''
+Lex: lymph_nodes_pathologic_complete
+Regex: 'adenopathi'
 Type: 'snomedct:59441001'
