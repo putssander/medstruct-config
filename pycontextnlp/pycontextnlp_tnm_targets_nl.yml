@@ -289,13 +289,13 @@ Type: 'snomedct:41224006'
 Comments: 'lets hope there are no liters described ;)'
 Direction: ''
 Lex: mention_left_body_side
-Regex: 'links|linker|\bL\b'
+  Regex: 'links|linker|\bL\b|(?<=\d\s)(l|L)\b|(?<=\d)(l|L)\b'
 Type: 'snomedct:31156008'
 ---
 Comments: ''
 Direction: ''
 Lex: mention_right_body_side
-Regex: 'rechts|rechter|\bR\b'
+Regex: 'rechts|rechter|\bR\b|(?<=\d\s)(r|R)\b|(?<=\d)(r|R)\b'
 Type: 'snomedct:85421007'
 ---
 Comments: ''
