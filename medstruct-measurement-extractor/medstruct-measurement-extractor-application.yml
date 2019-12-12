@@ -15,53 +15,6 @@ measurement-extractor:
     quantity: "LENGTH"
     sub-quantity: "DIMENSION"
 
-  - code: "snomedct:76838003-size" #lymph node size
-    unit: "cm"
-    preceding-concept: "snomedct:76838003" #supraclavicular
-    quantity: "LENGTH"
-    sub-quantity: "DIMENSION"
-  - code: "snomedct:62683002-size" #lymph node size
-    unit: "cm"
-    preceding-concept: "snomedct:62683002" #mediastinal
-    quantity: "LENGTH"
-    sub-quantity: "DIMENSION"
-  - code: "snomedct:28330007-size" #lymph node size
-    unit: "cm"
-    preceding-concept: "snomedct:28330007" #subcarinal
-    quantity: "LENGTH"
-    sub-quantity: "DIMENSION"
-  - code: "snomedct:35783009-size" #lymph node size
-    unit: "cm"
-    preceding-concept: "snomedct:35783009" #aortic
-    quantity: "LENGTH"
-    sub-quantity: "DIMENSION"
-  - code: "snomedct:3074004-size" #lymph node size
-    unit: "cm"
-    preceding-concept: "snomedct:3074004" #hilar
-    quantity: "LENGTH"
-    sub-quantity: "DIMENSION"
-  #  - code: "snomedct:3074004-size" #lymph node size
-  #    unit: "cm"
-  #    preceding-concept: "snomedct:3074004" #peribronchal
-  #    quantity: "LENGTH"
-  #    sub-quantity: "DIMENSION"
-
-  - code: "snomedct:53623008-size" #lymph node size
-    unit: "cm"
-    preceding-concept: "snomedct:53623008" #N1_NODES_IPS
-    quantity: "LENGTH"
-    sub-quantity: "DIMENSION"
-  - code: "snomedct:46059003-size" #lymph node size
-    unit: "cm"
-    preceding-concept: "snomedct:46059003" #N2_NODES_IPS
-    quantity: "LENGTH"
-    sub-quantity: "DIMENSION"
-  - code: "snomedct:5856006-size" #lymph node size
-    unit: "cm"
-    preceding-concept: "snomedct:5856006" #N3_NODES_CL
-    quantity: "LENGTH"
-    sub-quantity: "DIMENSION"
-
   quantity-subtypes:
   - subtype: "DISTANCE"
     regex: "afstand|gebied tussen|ruimte tussen"
