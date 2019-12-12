@@ -24,94 +24,95 @@ Type: 'none:lymphadenopathy'
 ---
 Comments: ''
 Direction: ''
-Lex: thorax-station-1
-Regex: '(station|level) {0,1}\b(1)|\b(1)(?=( {0,1}(L|R|links|rechts)))|supraclaviculair|cervicaal|sternaal'
-Type: 'none:thorax-station-1'
----
-Comments: ''
-Direction: ''
-Lex: thorax-station-2
-Regex: '(station|level) {0,1}\b(2)|\b(2)(?=( {0,1}(L|R|links|rechts)))|paratracheaal|hoog paratracheaal'
-Type: 'none:thorax-region-2'
----
-Comments: ''
-Direction: ''
-Lex: thorax-station-3a
-Regex: '(station|level) {0,1}\b(3a)|\b(3a)(?=( {0,1}(L|R|links|rechts)))|pre-{0,1}vasculair'
-Type: 'none:thorax-station-3a'
----
-Comments: ''
-Direction: ''
-Lex: thorax-station-3p
-Regex: '(station|level) {0,1}\b(3p)|\b(3p)(?=( {0,1}(L|R|links|rechts)))|pre-{0,1}vertrebra'
-Type: 'none:thorax-station-3p'
----
-Comments: ''
-Direction: ''
-Lex: thorax-station-4
-Regex: '(station|level) {0,1}\b(4)|\b(4)(?=( {0,1}(L|R|links|rechts)))|paratrachea|paratrachea lager'
-Type: 'none:thorax-station-4'
----
-Comments: ''
-Direction: ''
-Lex: thorax-station-5
-Regex: '(station|level) {0,1}\b(5)|sub-{0,1}aortaal|(AP|aorta-{0,1}pulmona)-{0,1}(window|venster)'
-Type: 'none:thorax-station-5'
----
-Comments: ''
-Direction: ''
-Lex: thorax-station-6
-Regex: '(station|level) {0,1}\b(6)|para-{0,1}aorta'
-Type: 'none:thorax-station-6'
----
-Comments: ''
-Direction: ''
-Lex: thorax-station-7
-Regex: '(station|level) {0,1}\b(7)|\b(7)(?=( {0,1}(L|R|links|rechts)))|sub-{0,1}carina'
-Type: 'none:thorax-station-7'
----
-Comments: ''
-Direction: ''
-Lex: thorax-station-8
-Regex: '(station|level) {0,1}\b(8)|\b(8)(?=( {0,1}(L|R|links|rechts)))|oesofagea'
-Type: 'none:thorax-station-8'
----
-Comments: ''
-Direction: ''
-Lex: thorax-station-9
-Regex: '(station|level) {0,1}\b(9)|\b(9)(?=( {0,1}(L|R|links|rechts)))|pulmonair ligament'
-Type: 'none:thorax-station-9'
----
-Comments: ''
-Direction: ''
 Lex: thorax-station-10
-Regex: '(station|level) {0,1}\b(10)|\b(10)(?=( {0,1}(L|R|links|rechts)))|hilair'
+Regex: '(station|level) {0,1}\b10|hilair'
 Type: 'none:thorax-station-10'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-11
-Regex: '(station|level) {0,1}\b(11)|\b(11)(?=( {0,1}(L|R|links|rechts)))|interlobair'
+Regex: '(station|level) {0,1}\b11|interlobair'
 Type: 'none:thorax-station-11'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-12
-Regex: '(station|level) {0,1}\b(12)|\b(12)(?=( {0,1}(L|R|links|rechts)))|lobair'
+Regex: '(station|level) {0,1}\b12|lobair'
 Type: 'none:thorax-station-12'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-13
-Regex: '(station|level) {0,1}\b(13)|\b(13)(?=( {0,1}(L|R|links|rechts)))|segmenta(a|le)'
+Regex: '(station|level) {0,1}\b13|segmenta(a|le)'
 Type: 'none:thorax-station-13'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-14
-Regex: '(station|level) {0,1}\b(14)|\b(14)(?=( {0,1}(L|R|links|rechts)))|subsegmenta(a|le)'
+Regex: '(station|level) {0,1}\b14|subsegmenta(a|le)'
 Type: 'none:thorax-station-14'
 ---
+Comments: ''
+Direction: ''
+Lex: thorax-station-1
+Regex: '(station|level) {0,1}\b1|supraclaviculair|cervicaal|sternaal'
+Type: 'none:thorax-station-1'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-station-2
+Regex: '(station|level) {0,1}\b2|paratracheaal|hoog paratracheaal'
+Type: 'none:thorax-region-2'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-station-3a
+Regex: '(station|level) {0,1}\b3a|pre-{0,1}vasculair'
+Type: 'none:thorax-station-3a'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-station-3p
+Regex: '(station|level) {0,1}\b3p|pre-{0,1}vertrebra'
+Type: 'none:thorax-station-3p'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-station-4
+Regex: '(station|level) {0,1}\b4|paratrachea|paratrachea lager'
+Type: 'none:thorax-station-4'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-station-5
+Regex: '(station|level) {0,1}\b5|sub-{0,1}aortaal|(AP|aorta-{0,1}pulmona)-{0,1}(window|venster)'
+Type: 'none:thorax-station-5'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-station-6
+Regex: '(station|level) {0,1}\b6|para-{0,1}aorta'
+Type: 'none:thorax-station-6'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-station-7
+Regex: '(station|level) {0,1}\b7|sub-{0,1}carina'
+Type: 'none:thorax-station-7'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-station-8
+Regex: '(station|level) {0,1}\b8|oesofagea'
+Type: 'none:thorax-station-8'
+---
+Comments: ''
+Direction: ''
+Lex: thorax-station-9
+Regex: '(station|level) {0,1}\b9|pulmonair ligament'
+Type: 'none:thorax-station-9'
+---
+
 Comments: ''
 Direction: ''
 Lex: thorax-region-superior-mediastinal
