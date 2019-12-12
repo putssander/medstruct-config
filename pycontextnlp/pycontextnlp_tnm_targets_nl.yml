@@ -289,7 +289,7 @@ Type: 'snomedct:41224006'
 Comments: 'lets hope there are no liters described ;)'
 Direction: ''
 Lex: mention_left_body_side
-  Regex: 'links|linker|\bL\b|(?<=\d\s)(l|L)\b|(?<=\d)(l|L)\b'
+Regex: 'links|linker|\bL\b|(?<=\d\s)(l|L)\b|(?<=\d)(l|L)\b'
 Type: 'snomedct:31156008'
 ---
 Comments: ''
