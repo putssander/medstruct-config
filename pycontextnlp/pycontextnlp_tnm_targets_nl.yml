@@ -25,61 +25,61 @@ Type: 'none:lymphadenopathy'
 Comments: ''
 Direction: ''
 Lex: thorax-station-10
-Regex: '(stations?|levels?|regios?) {0,1}\b10|hilair'
+Regex: '(stations?|levels?|regios?) {0,1}\b10|hilair|10 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-10'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-11
-Regex: '(stations?|levels?|regios?) {0,1}\b11|inter-{0,1}lobair'
+Regex: '(stations?|levels?|regios?) {0,1}\b11|inter-{0,1}lobair|11 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-11'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-12
-Regex: '(stations?|levels?|regios?) {0,1}\b12|lobair'
+Regex: '(stations?|levels?|regios?) {0,1}\b12|lobair|12 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-12'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-13
-Regex: '(stations?|levels?|regios?) {0,1}\b13|segmenta(a|le)'
+Regex: '(stations?|levels?|regios?) {0,1}\b13|segmenta(a|le)|13 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-13'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-14
-Regex: '(stations?|levels?|regios?) {0,1}\b14|subsegmenta(a|le)'
+Regex: '(stations?|levels?|regios?) {0,1}\b14|subsegmenta(a|le)|14 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-14'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-1
-Regex: '(stations?|levels?|regios?) {0,1}\b1|supra-{0,1}claviculair|cervicaal|sternaal'
+Regex: '(stations?|levels?|regios?) {0,1}\b1|supra-{0,1}claviculair|cervicaal|sternaal|1 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-1'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-2
-Regex: '(stations?|levels?|regios?) {0,1}\b2|para-{0,1}tracheaal|hoog paratracheaal'
+Regex: '(stations?|levels?|regios?) {0,1}\b2|para-{0,1}tracheaal|hoog paratracheaal|2 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-region-2'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-3a
-Regex: '(stations?|levels?|regios?) {0,1}\b3a|pre-{0,1}vasculair'
+Regex: '(stations?|levels?|regios?) {0,1}\b3a|pre-{0,1}vasculair|3a {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-3a'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-3p
-Regex: '(stations?|levels?|regios?) {0,1}\b3p|pre-{0,1}vertrebra'
+Regex: '(stations?|levels?|regios?) {0,1}\b3p|pre-{0,1}vertrebra|3p {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-3p'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-4
-Regex: '(stations?|levels?|regios?) {0,1}\b4|para-{0,1}trachea'
+Regex: '(stations?|levels?|regios?) {0,1}\b4|para-{0,1}trachea|4 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-4'
 ---
 Comments: ''
@@ -97,19 +97,19 @@ Type: 'none:thorax-station-6'
 Comments: ''
 Direction: ''
 Lex: thorax-station-7
-Regex: '(stations?|levels?|regios?) {0,1}\b7|sub-{0,1}carina'
+Regex: '(stations?|levels?|regios?) {0,1}\b7|sub-{0,1}carina|7 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-7'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-8
-Regex: '(stations?|levels?|regios?) {0,1}\b8|para-{0,1}(oesof|oesoph)'
+Regex: '(stations?|levels?|regios?) {0,1}\b8|para-{0,1}(oesof|oesoph)|8 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-8'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-9
-Regex: '(stations?|levels?|regios?) {0,1}\b9|pulmonair ligament'
+Regex: '(stations?|levels?|regios?) {0,1}\b9|pulmonair ligament|9 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-9'
 ---
 
