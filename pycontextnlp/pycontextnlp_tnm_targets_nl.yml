@@ -55,13 +55,13 @@ Type: 'none:thorax-station-14'
 Comments: ''
 Direction: ''
 Lex: thorax-station-1
-Regex: '(stations?|levels?|regios?) {0,1}\b1|supra-{0,1}claviculair|cervicaal|sternaal|1 {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '(stations?|levels?|regios?) {0,1}\b1|supra-{0,1}claviculair|cervicaal|sternaal|\b1 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-1'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-2
-Regex: '(stations?|levels?|regios?) {0,1}\b2|para-{0,1}tracheaal|hoog paratracheaal|2 {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '(stations?|levels?|regios?) {0,1}\b2|para-{0,1}tracheaal|hoog paratracheaal|\b2 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-region-2'
 ---
 Comments: ''
@@ -79,7 +79,7 @@ Type: 'none:thorax-station-3p'
 Comments: ''
 Direction: ''
 Lex: thorax-station-4
-Regex: '(stations?|levels?|regios?) {0,1}\b4|para-{0,1}trachea|4 {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '(stations?|levels?|regios?) {0,1}\b4|para-{0,1}trachea|\b4 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-4'
 ---
 Comments: ''
@@ -310,3 +310,21 @@ Direction: ''
 Lex: lymph_nodes_pathologic_adj
 Regex: 'pathologisch|vergroot|vergrot|afwijkend|metastase'
 Type: 'none:lymph-nodes-pathologic-adj'
+---
+Comments: ''
+Direction: ''
+Lex: ipsilateral
+Regex: 'ipsilateraal'
+Type: 'none:side-ipsilateral'
+---
+Comments: ''
+Direction: ''
+Lex: contraleral
+Regex: 'contraleraal'
+Type: 'none:side-contraleral'
+---
+Comments: ''
+Direction: ''
+Lex: bilateral
+Regex: 'bilateraal'
+Type: 'none:side-bilateral'
