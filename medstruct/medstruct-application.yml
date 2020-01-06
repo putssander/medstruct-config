@@ -35,6 +35,7 @@ preprocessor:
     "ca.": "circa"
   replace-punctuations:
     ":": ""
+    "-": " "
 
 tnm-classification:
   xlsx-result-columns:
