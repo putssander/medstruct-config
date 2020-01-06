@@ -79,7 +79,7 @@ Type: 'none:thorax-station-3p'
 Comments: ''
 Direction: ''
 Lex: thorax-station-4
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b(4|IV|Ⅳ)|para-{0,1}trachea|\b4 {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b(4|IV|Ⅳ)|para-{0,1}trachea|mediastinale (?=(lymf|klier|adenopat|patholo|vergro))|mediastinaal (?=(lymf|klier|adenopat|patholo|vergro))|((?<=klier)|(?<=klieren)) mediastinaal|\b4 {0,1}(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-4'
 ---
 Comments: ''
