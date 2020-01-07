@@ -14,7 +14,7 @@ measurement-extractor:
     preceding-concept: "snomedct:59441001" #lymph
     quantity: "LENGTH"
     sub-quantity: "DIMENSION"
-  - code: "none:lymph-node-size" #aorta size
+  - code: "none:aorta-size" #aorta size
     unit: "cm"
     preceding-concept: "snomedct:3711007" #oarta
     quantity: "LENGTH"
