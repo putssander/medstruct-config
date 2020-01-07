@@ -326,5 +326,5 @@ Type: 'none:side-contralateral'
 Comments: ''
 Direction: ''
 Lex: bilateral
-Regex: 'bilater|beide.*zijd|weerskanten'
+Regex: 'bilater|beide.*zijd|weerskanten|alle.*(?<=station)|(?<=level)|(?<=regio)|(?<=zone)'
 Type: 'none:side-bilateral'
