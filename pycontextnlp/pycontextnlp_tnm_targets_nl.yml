@@ -200,7 +200,7 @@ Type: 'snomedct:76848001'
 Comments: ''
 Direction: ''
 Lex: satellite_nodule
-Regex: 'satelliet.*'
+Regex: 'satelliet'
 Type: 'snomedct:396408009'
 ---
 Comments: ''
