@@ -19,97 +19,97 @@ Type: 'snomedct:248448006'
 Comments: ''
 Direction: ''
 Lex: lymph_adenopathy
-Regex: 'lymfadenopathi|adenopathi|klier {0,1}metastase'
+Regex: 'lymfadenopathi|adenopathi|klier\s?metastase'
 Type: 'none:lymphadenopathy'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-10
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b10|hilair|(10|X|Ⅹ) {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b10|hilair|(10|X|Ⅹ)\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-10'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-11
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b11|inter-{0,1}lobair|(11|XI|Ⅺ) {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b11|inter-{0,1}\s?lobair|(11|XI|Ⅺ)\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-11'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-12
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b12|lobair|(12|XII|Ⅻ) {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b12|lobair|(12|XII|Ⅻ)\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-12'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-13
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b13|segmenta(a|le)|(13|XIII) {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b13|segmenta(a|le)|(13|XIII)\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-13'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-14
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b14|subsegmenta(a|le)|(14|XIV) {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b14|subsegmenta(a|le)|(14|XIV)\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-14'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-1
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b1|(supra|retro)-{0,1}claviculair|cervicaal|sternaal|\b(1|I|Ⅰ) {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b1|(supra|retro)-{0,1}\s?claviculair|cervicaal|sternaal|\b(1|I|Ⅰ)\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-1'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-2
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b2|para-{0,1}tracheaal|hoog paratracheaal|\b(2|II|Ⅱ) {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b2|para-{0,1}\s?tracheaal|hoog paratracheaal|\b(2|II|Ⅱ)\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-region-2'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-3a
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}(3|III|Ⅲ)a|pre-{0,1}vasculair'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?(3|III|Ⅲ)a|pre-{0,1}\s?vasculair'
 Type: 'none:thorax-station-3a'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-3p
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}(3|III|Ⅲ)p|pre-{0,1}vertrebra'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?(3|III|Ⅲ)p|pre-{0,1}\s?vertrebra'
 Type: 'none:thorax-station-3p'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-4
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b(4|IV|Ⅳ)|para-{0,1}trachea|mediastinale (?=(lymf|klier|adenopat|patholo|vergro))|mediastinaal (?=(lymf|klier|adenopat|patholo|vergro))|((?<=klier)|(?<=klieren)) mediastinaal|\b4 {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(4|IV|Ⅳ)|para-{0,1}\s?trachea|mediastinale (?=(lymf|klier|adenopat|patholo|vergro))|mediastinaal (?=(lymf|klier|adenopat|patholo|vergro))|((?<=klier)|(?<=klieren)) mediastinaal|\b4\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-4'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-5
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b(5|V|Ⅴ)|sub-{0,1}aortaal|(AP|aorta-{0,1}pulmona)-{0,1}(window|venster)'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(5|V|Ⅴ)|sub-{0,1}\s?aortaal|(AP|aorta-{0,1}\s?pulmona)-{0,1}\s?(window|venster)'
 Type: 'none:thorax-station-5'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-6
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b(6|VI|Ⅰ|Ⅵ)|para-{0,1}aorta'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(6|VI|Ⅰ|Ⅵ)|para-{0,1}\s?aorta'
 Type: 'none:thorax-station-6'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-7
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b(7|VII|Ⅶ)|sub-{0,1}carina|pre-{0,1}carina|7 {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(7|VII|Ⅶ)|sub-{0,1}\s?carina|pre-{0,1}\s?carina|7\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-7'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-8
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b(8|VIII|ⅠⅠⅠ|Ⅷ)|para-{0,1}(oesof|oesoph)|8 {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(8|VIII|ⅠⅠⅠ|Ⅷ)|para-{0,1}\s?(oesof|oesoph)|8\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-8'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-9
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s? {0,1}\b(9|IX|Ⅰ|Ⅸ)|pulmonair ligament|9 {0,1}(?=(r|R|rechts|l|L|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(9|IX|Ⅰ|Ⅸ)|pulmonair ligament|9\s?(?=(r|R|rechts|l|L|links))'
 Type: 'none:thorax-station-9'
 ---
 
