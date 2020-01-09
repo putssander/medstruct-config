@@ -62,7 +62,7 @@ Comments: ''
 Direction: ''
 Lex: thorax-station-2
 Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b2|para-{0,1}\s?tracheaal|hoog paratracheaal|\b(2|II\b|Ⅱ)\s?(?=(r\b|R\b|rechts|l\b|L\b|links))'
-Type: 'none:thorax-region-2'
+Type: 'none:thorax-station-2'
 ---
 Comments: ''
 Direction: ''
