@@ -24,6 +24,13 @@ Type: 'none:lymphadenopathy'
 ---
 Comments: ''
 Direction: ''
+Lex: bilateral
+Regex: 'bilater|beide.*zijd|weerskanten|alle.*(?<=station)|(?<=level)|(?<=regio)|(?<=zone)|(links|linker|rechts|rechter)\s(en|als)\s(links|linker|rechts|rechter)'
+#Regex: 'bilater|beide.*zijd|weerskanten|alle.*(?<=station)|(?<=level)|(?<=regio)|(?<=zone)'
+Type: 'none:side-bilateral'
+---
+Comments: ''
+Direction: ''
 Lex: thorax-station-10
 Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b10|hilair|(10|X\b|Ⅹ)\s?(?=(r\b|R\b|rechts|l\b|L\b|links))'
 Type: 'none:thorax-station-10'
@@ -322,9 +329,4 @@ Direction: ''
 Lex: contraleral
 Regex: 'contralater'
 Type: 'none:side-contralateral'
----
-Comments: ''
-Direction: ''
-Lex: bilateral
-Regex: 'bilater|beide.*zijd|weerskanten|alle.*(?<=station)|(?<=level)|(?<=regio)|(?<=zone)'
-Type: 'none:side-bilateral'
+
