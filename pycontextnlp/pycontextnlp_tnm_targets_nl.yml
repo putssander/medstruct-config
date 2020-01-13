@@ -13,7 +13,7 @@ Type: 'snomedct:108369006_t4'
 Comments: ''
 Direction: ''
 Lex: concept_involvement
-Regex: 'aan(ge)?tast|destructie|(door|in)(ge)?groei|uitbreiding|betrokken|invade|invasie|induratie|groeit (door|in)'
+Regex: 'aan(ge)?tast|destructie|(door|in)(ge)?groei|uitbreiding|betrokken|invade|invasie|induratie|groeit (door|in)|betrekt'
 Type: 'snomedct:248448006'
 ---
 Comments: ''
