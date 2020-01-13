@@ -25,7 +25,7 @@ Type: 'none:lymphadenopathy'
 Comments: ''
 Direction: ''
 Lex: bilateral
-Regex: 'bilater|beide.*zijd|weerskanten|alle.*(?<=station)|(?<=level)|(?<=regio)|(?<=zone)|(links|linker|rechts|rechter)\s(en|als)\s(links|linker|rechts|rechter)'
+Regex: 'bilater|beide.*zijd|weerskanten|alle.*(?<=station)|(?<=level)|(?<=regio)|(?<=zone)|(links|linker)\s(en|als)\s(rechts|rechter)|(rechts|rechter)\s(en|als)\s(links|linker)'
 #Regex: 'bilater|beide.*zijd|weerskanten|alle.*(?<=station)|(?<=level)|(?<=regio)|(?<=zone)'
 Type: 'none:side-bilateral'
 ---
