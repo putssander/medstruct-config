@@ -118,53 +118,10 @@ Lex: thorax-station-9
 Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(9|IX\b|Ⅸ)|pulmonair ligament|9\s?(?=(r\b|R\b|rechts|l\b|L\b|links))'
 Type: 'none:thorax-station-9'
 ---
-
-Comments: ''
-Direction: ''
-Lex: thorax-region-superior-mediastinal
-Regex: 'mediastinaal (superieur|hoog)'
-Type: 'none:thorax-region-superior-mediastinal'
----
-Comments: ''
-Direction: ''
-Lex: thorax-region-aortic
-Regex: 'aortisch'
-Type: 'none:thorax-region-aortic'
----
-Comments: ''
-Direction: ''
-Lex: thorax-region-mediastinal
-Regex: 'mediastinaal (inferieur|laag)'
-Type: 'none:thorax-region-inferior-mediastinal'
----
-Comments: ''
-Direction: ''
-Lex: thorax-region-n1
-Regex: 'hilair|peribronchia|interlobai'
-Type: 'none:thorax-region-n1'
----
-#Comments: ''
-#Direction: ''
-#Lex: n1_node
-#Regex: '\bn1\b'
-#Type: 'snomedct:53623008'
-#---
-#Comments: ''
-#Direction: ''
-#Lex: n2_node
-#Regex: '\bn2\b|ips.*mediastinal|ips.subcar'
-#Type: 'snomedct:46059003'
-#---
-#Comments: ''
-#Direction: ''
-#Lex: n3_node
-#Regex: '\bn3\b|contralat*mediastinal|hilar.*node|supraclav.*node'
-#Type: 'snomedct:5856006'
-#---
 Comments: ''
 Direction: ''
 Lex: main_bronchus
-Regex: '(centrale|hoofd|hilair).*bronch'
+Regex: '(centrale|hoofd|hilair|hilaire)/s?bronch'
 Type: 'snomedct:102297006'
 ---
 Comments: ''
