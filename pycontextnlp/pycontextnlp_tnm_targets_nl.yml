@@ -265,7 +265,7 @@ Type: 'snomedct:85421007'
 Comments: ''
 Direction: ''
 Lex: lymph_nodes
-Regex: 'lymf|klier|weke delen'
+Regex: 'lymf|klier'
 Type: 'snomedct:59441001'
 ---
 Comments: ''
