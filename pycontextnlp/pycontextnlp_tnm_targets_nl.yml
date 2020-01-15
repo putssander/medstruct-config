@@ -109,7 +109,7 @@ Type: 'none:thorax-station-7'
 Comments: ''
 Direction: ''
 Lex: thorax-station-8
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(8|VIII|ⅠⅠⅠ|Ⅷ)|para-{0,1}\s?(oesof|oesoph)|8\s?(?=(r\b|R\b|rechts|l\b|L\b|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(8|VIII|ⅤⅠⅠⅠ|Ⅷ)|para-{0,1}\s?(oesof|oesoph)|8\s?(?=(r\b|R\b|rechts|l\b|L\b|links))'
 Type: 'none:thorax-station-8'
 ---
 Comments: ''
