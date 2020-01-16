@@ -187,7 +187,7 @@ Type: 'snomedct:80891009'
 Comments: ''
 Direction: ''
 Lex: great_vessels
-Regex: 'grote vaten|centrale vaten|aorta|vena cava|vcs|VCS'
+Regex: 'grote vaten|centrale vaten|aorta(?!boog)|vena cava|vcs|VCS'
 Type: 'snomedct:3711007'
 ---
 Comments: ''

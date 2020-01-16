@@ -1,0 +1,60 @@
+measurement-extractor:
+  blacklist-pattern: "(.*)-(.*)"
+  split-pattern: "x"
+  limit-code-matching-bound-to-sentence-start: true
+  ordinal-map:
+    "1.0": "een"
+    "2.0": "twee"
+    "3.0": "drie"
+    "4.0": "vier"
+    "5.0": "vijf"
+    "6.0": "zes"
+    "7.0": "zeven"
+    "8.0": "acht"
+    "9.0": "negen"
+    "10.0": "tien"
+
+  codes:
+    - code: "loinc:21889-1" #tumor size
+      unit: "cm"
+      preceding-concept: "snomedct:108369006" #tumor
+      quantity: "LENGTH"
+      sub-quantity: "DIMENSION"
+    - code: "none:lymph-node-size" #lymph node size
+      unit: "cm"
+      preceding-concept: "snomedct:59441001" #lymph
+      quantity: "LENGTH"
+      sub-quantity: "DIMENSION"
+    - code: "none:aorta-size" #aorta size
+      unit: "cm"
+      preceding-concept: "snomedct:3711007" #oarta
+      quantity: "LENGTH"
+      sub-quantity: "DIMENSION"
+
+  quantity-subtypes:
+    - subtype: "DISTANCE"
+      regex: "afstand|gebied tussen|ruimte tussen" #op?
+      quantity: "LENGTH"
+    - subtype: "LOCATION"
+      regex: "bevindt zich"
+      quantity: "LENGTH"
+    - subtype: "DIMENSION"
+      regex: "groot|diameter|afmeting|korte as|meet|lengte"
+      quantity: "LENGTH"
+    - subtype: "DISPLACEMENT"
+      regex: "shift"
+      quantity: "LENGTH"
+
+  quantity.length:
+    normalization-unit: "cm"
+    unitMmPattern: "mm|millimeter"
+    unitCmPattern: "cm|centimeter"
+    unitDmPattern: "dm|decimeter"
+    dimensionAttributePattern: '(\bx\b|\bbij\b|maal|\bop\b|plus.*minus|ongeveer|om en nabij|\ba\b|circa|\ben\b)'
+
+processor.enabled: false
+restcontroller.enabled: true
+
+server:
+  port: 5004
+

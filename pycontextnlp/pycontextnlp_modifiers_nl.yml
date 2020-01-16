@@ -3501,7 +3501,7 @@
 ---
   Lex: 'wat'
   Type: LIMITED_AMOUNT
-  Regex: 'wat'
+  Regex: 'wat|minimale|minimaal'
   Direction: forward
   Unnamed-4: ""
   Unnamed-5: ""
