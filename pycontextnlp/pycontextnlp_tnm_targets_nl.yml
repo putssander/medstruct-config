@@ -139,7 +139,7 @@ Type: 'snomedct:46621007'
 Comments: ''
 Direction: ''
 Lex: obstructive_pneumonitis
-Regex: 'obstructieve pneumoni|infect.*verander'
+Regex: 'obstructieve pneumoni|infecti(e|ë)u(s|z)e (verander|component)'
 Type: 'snomedct:205237003'
 ---
 Comments: ''
