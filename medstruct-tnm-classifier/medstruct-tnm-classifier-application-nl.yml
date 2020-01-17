@@ -13,30 +13,30 @@ lung-tnm-classification:
   conceptsT1:
 
   conceptsInvolvementT2:
-  - "snomedct:102297006"
-  - "snomedct:81623005"
+    - "snomedct:102297006"
+    - "snomedct:81623005"
 
   conceptsPresentT2:
-  - "snomedct:46621007"
-  - "snomedct:205237003"
+    - "snomedct:46621007"
+    - "snomedct:205237003"
 
   conceptsInvolvementT3:
-  - "snomedct:78904004"
-  - "snomedct:50230006"
-  - "snomedct:76848001"
+    - "snomedct:78904004"
+    - "snomedct:50230006"
+    - "snomedct:76848001"
 
   conceptsPresentT3:
 
   conceptsInvolvementT4:
-  - "snomedct:5798000"
-  - "snomedct:72410000"
-  - "snomedct:80891009"
-  - "snomedct:3711007"
-  - "snomedct:44567001"
-  - "snomedct:731050007"
-  - "snomedct:32849002"
-  - "snomedct:3572006"
-  - "snomedct:28700002"
+    - "snomedct:5798000"
+    - "snomedct:72410000"
+    - "snomedct:80891009"
+    - "snomedct:3711007"
+    - "snomedct:44567001"
+    - "snomedct:731050007"
+    - "snomedct:32849002"
+    - "snomedct:3572006"
+    - "snomedct:28700002"
 
   conceptsPresentT4:
 
@@ -55,29 +55,29 @@ lung-tnm-classification:
     T3: 5
     T4: 7
 
+  min-tumor-size: 1
+  lung-size-blacklist-pattern: '(aneurysm|aorta|pulmonary artery|cyst|adenoma|adrenal|liver|kidney|spleen|colon|rectum|sigmoid|prostate|ovary|ovaries|brain|breast|thyroid|isthmus|low attenuation)'
+  apply-lung-size-blacklist-pattern: false
+  secondary-tumor-blacklist-pattern: '(.*)nodu(.*)'
+  apply-secondary-tumor-blacklist-pattern: true
+
   context:
     exist:
-    - "definite_existence"
+      - "definite_existence"
     negate:
-    - "definite_negated_existence"
-    - "pseudoneg"
+      - "definite_negated_existence"
+      - "pseudoneg"
     uncertain:
-    - "probable_existence"
-    - "probable_negated_existence"
-    - "indication"
-    - "ambivalent_existence"
+      - "probable_existence"
+      - "probable_negated_existence"
+      - "indication"
+      - "ambivalent_existence"
     historical:
-    - "historical"
+      - "historical"
     exist-concept-blacklist-modifiers:
-    - "limited_amount"
+      - "limited_amount"
     exist-concept-blacklist:
-    - "snomedct:46621007"
-
-  min-tumor-size: 1
-  lung-size-blacklist-pattern: '(pulmonary artery|aneurysm|cyst|adenoma|adrenal|liver|kidney|spleen|colon|rectum|sigmoid|prostate|ovary|ovaries|brain|breast|thyroid|isthmus|ectatic|ectasia|parotid gland)'
-  apply-lung-size-blacklist-pattern: true
-  secondary-tumor-blacklist-pattern: "(.*)nodu(.*)"
-  apply-secondary-tumor-blacklist-pattern: true
+      - "snomedct:46621007"
 
 processor.enabled: false
 restcontroller.enabled: true
