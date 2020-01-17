@@ -16,7 +16,7 @@ Supported languages:
     - N: trained/validated for Dutch with an accuracy of approximately 0.85
     - M: not implemented/feasible based on thorax scans
 
-Expressions with uncertainty are detected and not used for classification.
+Mentions containing uncertainty are detected and not used for classification.
   
 The medstruct applications contains the following services and repositories:
 

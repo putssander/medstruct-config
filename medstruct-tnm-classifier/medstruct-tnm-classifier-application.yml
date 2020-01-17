@@ -94,8 +94,3 @@ thoracic.lymph-node-concepts:
   peribronchal: 'snomedct:3074004'
   prevertrebral: 'snomedct:196446004'
   measurement-size-post-fix: '-size'
-
-thoracic.lymph-node-n-map:
-  N1_NODES_IPS: 'snomedct:53623008'
-  N2_NODES_IPS: 'snomedct:46059003'
-  N3_NODES_CL: 'snomedct:5856006'

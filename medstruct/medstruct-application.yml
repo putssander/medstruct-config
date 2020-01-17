@@ -24,6 +24,7 @@ simple-sectionizer:
     - 'thorax:'
   regex_whitelist_optional:
     - 'conclusie:'
+    - 'conclusie'
   regex_blacklist:
     - 'gegevens:'
     - 'vraagstelling:'
@@ -50,18 +51,25 @@ tnm-classification:
     - 'tnmM'
 
 medstruct:
-  lang: 'en'
+  lang: 'nl'
+  #  xlsx:
+  #    text-column: 'report'
+  #    label-tnm-column: 'GOLD'
+  #    label-t-column: 'GOLD'
+  #    label-n-column: 'N MARTIJN'
+  #    label-m-column: 'GOLD'
   xlsx:
     text-column: 'report'
-    label-tnm-column: 'GOLD'
-    label-t-column: 'GOLD-T'
-    label-n-column: 'GOLD-N'
-    label-m-column: 'GOLD-M'
+    label-tnm-column:
+    label-t-column: 'LABEL_T'
+    label-n-column: 'LABEL_N'
+    label-m-column: 'LABEL_M'
 
   results:
     confusion-matrix-prefix: 'confusion-matrix'
-    confusion-matrix-eps: false
-    output-dir: '/data/results'
+    confusion-matrix-eps: true
+    output-dir: '/Users/sanderputs/DataSets/Result'
+    dump-json-nlp: false
 
 spacy:
   models:
