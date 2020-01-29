@@ -40,9 +40,9 @@ medstruct:
   xlsx:
     text-column: 'report'
     label-tnm-column: 'GOLD'
-    label-t-column: 'GOLD-T'
-    label-n-column: 'GOLD-N'
-    label-m-column: 'GOLD-M'
+    label-t-column: 'LABEL_T'
+    label-n-column: 'LABEL_T'
+    label-m-column: 'LABEL_T'
   results:
     confusion-matrix-prefix: 'confusion-matrix'
     confusion-matrix-eps: false

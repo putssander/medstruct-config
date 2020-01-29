@@ -2,11 +2,11 @@ version: '3.7'
 
 services:
   pycontext-json-nlp-medstruct:
-    image: maastrodocker/pycontextnlp:latest
+    image: putssander/pycontextnlp:boston2019
     container_name: pycontext-json-nlp-medstruct
     environment:
-    - MODIFIERS=/data/pycontextnlp_modifiers_en.yml
-    - TARGETS=/data/pycontextnlp_tnm_targets_en.yml
+    - MODIFIERS=/data/pycontextnlp_modifiers_nl.yml
+    - TARGETS=/data/pycontextnlp_tnm_targets_nl.yml
     expose:
     - '9999'
     ports:
@@ -15,7 +15,8 @@ services:
     networks:
     - medstruct-network
     volumes:
-    - './medstruct-config:/data'
+    - './pycontextnlp_modifiers_en.yml:/data/pycontextnlp_modifiers_nl.yml'
+    - './pycontextnlp_tnm_targets_en.yml:/data/pycontextnlp_tnm_targets_nl.yml'
     # entrypoint: python /app/pyConTextNLP/io/tcpService.py --port=9999
 
   spacy-json-nlp-medstruct:
@@ -45,7 +46,7 @@ services:
     - medstruct-network
 
   medstruct-tnm-classifier:
-    image: putssander/medstruct-tnm-classifier:2.2
+    image: putssander/medstruct-tnm-classifier:boston2019
     container_name: medstruct-tnm-classifier
     expose:
     - '5005'

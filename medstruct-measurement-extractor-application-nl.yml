@@ -1,0 +1,103 @@
+measurement-extractor:
+  blacklist-pattern: "(.*)-(.*)"
+  split-pattern: "x"
+  code-matching-bound-to-sentence-start: true
+
+  codes:
+  - code: "loinc:21889-1" #tumor size
+    unit: "cm"
+    preceding-concept: "snomedct:108369006" #tumor
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+  - code: "none:lymph-node-size" #lymph node size
+    unit: "cm"
+    preceding-concept: "snomedct:59441001" #lymph
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+
+  - code: "snomedct:76838003-size" #lymph node size
+    unit: "cm"
+    preceding-concept: "snomedct:76838003" #supraclavicular
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+  - code: "snomedct:62683002-size" #lymph node size
+    unit: "cm"
+    preceding-concept: "snomedct:62683002" #mediastinal
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+  - code: "snomedct:28330007-size" #lymph node size
+    unit: "cm"
+    preceding-concept: "snomedct:28330007" #subcarinal
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+  - code: "snomedct:35783009-size" #lymph node size
+    unit: "cm"
+    preceding-concept: "snomedct:35783009" #aortic
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+  - code: "snomedct:3074004-size" #lymph node size
+    unit: "cm"
+    preceding-concept: "snomedct:3074004" #hilar
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+  #  - code: "snomedct:3074004-size" #lymph node size
+  #    unit: "cm"
+  #    preceding-concept: "snomedct:3074004" #peribronchal
+  #    quantity: "LENGTH"
+  #    sub-quantity: "DIMENSION"
+
+  - code: "snomedct:53623008-size" #lymph node size
+    unit: "cm"
+    preceding-concept: "snomedct:53623008" #N1_NODES_IPS
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+  - code: "snomedct:46059003-size" #lymph node size
+    unit: "cm"
+    preceding-concept: "snomedct:46059003" #N2_NODES_IPS
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+  - code: "snomedct:5856006-size" #lymph node size
+    unit: "cm"
+    preceding-concept: "snomedct:5856006" #N3_NODES_CL
+    quantity: "LENGTH"
+    sub-quantity: "DIMENSION"
+
+  quantity-subtypes:
+  - subtype: "DISTANCE"
+    regex: "afstand|gebied tussen|ruimte tussen"
+    quantity: "LENGTH"
+  - subtype: "LOCATION"
+    regex: "bevindt zich"
+    quantity: "LENGTH"
+  - subtype: "DIMENSION"
+    regex: "groot|diameter|afmeting|korte as"
+    quantity: "LENGTH"
+  - subtype: "DISPLACEMENT"
+    regex: "shift"
+    quantity: "LENGTH"
+
+  ordinal-map:
+    "1": "one"
+    "2": "two"
+    "3": "three"
+    "4": "four"
+    "5": "five"
+    "6": "six"
+    "7": "seven"
+    "8": "eight"
+    "9": "nine"
+    "10": "ten"
+
+  quantity.length:
+    normalization-unit: "cm"
+    unitMmPattern: "mm|millimeter"
+    unitCmPattern: "cm|centimeter"
+    unitDmPattern: "dm|decimeter"
+    dimensionAttributePattern: "(x|X|by|times|at least|and)"
+
+processor.enabled: false
+restcontroller.enabled: true
+
+server:
+  port: 5004
+

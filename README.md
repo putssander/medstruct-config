@@ -28,3 +28,5 @@ Supported languages: Dutch
     docker run -ti --rm --net medstruct-network -v '/data/reports/t-stage/:/data/' -v ${PWD}/medstruct-application.yml:/app/application.yml putssander/medstruct:2.0 python medstruct/xlsx_run.py /data/t-stage-reports-val-copy.xlsx training-set
     
    docker run -ti --rm --net medstruct-network -v '[LOCAL_PATH_IN_OUT]:/data/' -v ${PWD}/application.yml:/app/application.yml putssander/medstruct:2.0 python medstruct/xlsx_run.py /data/[XLSX_FILE_NAME] [RESULT_NAME]
+   
+      docker run -ti --rm --net medstruct-network -v '/Users/sanderputs/DataSets/Research/TNM-LUNG/reproduce/tnm1/:/data/' -v ${PWD}/application.yml:/app/application.yml putssander/medstruct:boston2019 python medstruct/xlsx_run.py /data/t-stage-reports-train-latestlabel.xlsx result-tnm1train
