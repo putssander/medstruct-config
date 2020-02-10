@@ -41,9 +41,9 @@ This repository is pre-configured.
 Detailed configuration options are described in the repositories of each individual service.
 
 list of services:
-- [putssander/medstruct](https://github.com/putssander/medstruct): pre-processing/management, main-API, text-cleaning, sectionizer, read/write evaluation excel data
+- [maastroclinic/medstruct](https://github.com/maastroclinic/medstruct): pre-processing/management, main-API, text-cleaning, sectionizer, read/write evaluation excel data
 - [putssander/spacy-json-nlp](https://github.com/putssander/spaCy-JSON-NLP): annotate text with spaCy into the JSON-NLP format
-- [maastrodocker/pycontextnlp](https://github.com/maastroclinic/pycontextnlp): JSON-NLP wrapper around pyContextNLP to annotate clinical targets (clinical concepts) and context (negations/uncertainty)
+- [maastroclinic/pycontextnlp](https://github.com/maastroclinic/pycontextnlp): JSON-NLP wrapper around pyContextNLP to annotate clinical targets (clinical concepts) and context (negations/uncertainty)
 - [putssander/medstruct-measurement-extractor](https://github.com/putssander/medstruct-measurement-extractractor): extract and link measurement expressions to clinical concepts
 - [putssander/medstruct-tnm-classifier](https://github.com/putssander/medstruct-tnm-classifier): lung classification (tnm-8)
 
