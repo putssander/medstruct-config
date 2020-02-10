@@ -16,7 +16,7 @@ Supported languages:
     - N: trained/validated for Dutch with an accuracy of approximately 0.85
     - M: TODO
 
-Mentions containing uncertainty are detected and not used for classification.
+Mentions containing uncertainty are detected and not used for classification!
   
 The medstruct applications contains the following services and repositories:
 
@@ -33,7 +33,28 @@ The medstruct applications contains the following services and repositories:
     
     docker network create medstruct-network
     
-### 3. Overview & configuration
+### 3. RUN 
+
+    docker-compose pull && docker-compose up -d
+    
+#### 3.1 GUI    
+    
+The medstruct user interface will come available at: [http://localhost:8080](http://localhost:8080])
+
+![Alt text](https://raw.githubusercontent.com/putssander/medstruct-gui/master/doc/MEDSTRUCT_GUI_2020-01-15.png?raw=true "MEDSTRUCT GUI")
+
+
+#### 3.2 Excel Lung TNM-classification
+    
+To run the algorithm on an excel sheet.  
+   
+       docker run -ti --rm --net medstruct-network -v '[LOCAL_PATH_IN_OUT]:/data/' -v ${PWD}/application.yml:/app/application.yml putssander/medstruct:2.0 python medstruct/xlsx_run.py /data/[XLSX_FILE_NAME] [RESULT_NAME]
+       
+   example
+   
+       docker run -ti --rm --net medstruct-network -v '/data/reports/t-stage/:/data/' -v ${PWD}/medstruct-application.yml:/app/application.yml putssander/medstruct:2.0 python medstruct/xlsx_run.py /data/t-stage-reports-val-copy.xlsx training-set
+
+### 4. Overview & configuration
 
 This repository is pre-configured.
 - putssander/medstruct-config (THIS repository): configuration repository
@@ -56,28 +77,8 @@ Optional:
 
 If you want to perform classification on a excel file containing a batch for reports look  [putssander/medstruct](https://github.com/putssander/medstruct)
 
-### RUN 
 
-    docker-compose pull && docker-compose up -d
-    
-#### GUI    
-    
-The medstruct user interface will come available at: [http://localhost:8080](http://localhost:8080])
-
-![Alt text](https://raw.githubusercontent.com/putssander/medstruct-gui/master/doc/MEDSTRUCT_GUI_2020-01-15.png?raw=true "MEDSTRUCT GUI")
-
-
-#### Excel Lung TNM-classification
-    
-To run the algorithm on an excel sheet.  
-   
-       docker run -ti --rm --net medstruct-network -v '[LOCAL_PATH_IN_OUT]:/data/' -v ${PWD}/application.yml:/app/application.yml putssander/medstruct:2.0 python medstruct/xlsx_run.py /data/[XLSX_FILE_NAME] [RESULT_NAME]
-       
-   example
-   
-       docker run -ti --rm --net medstruct-network -v '/data/reports/t-stage/:/data/' -v ${PWD}/medstruct-application.yml:/app/application.yml putssander/medstruct:2.0 python medstruct/xlsx_run.py /data/t-stage-reports-val-copy.xlsx training-set
-  
-### FAQ
+### 5. FAQ
 
 - "not a directory"
 
