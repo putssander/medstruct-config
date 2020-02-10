@@ -7,18 +7,19 @@ Extract structure from medical narrative (Clinical NLP)
 ### Lung cancer classification (TNM-8)
 A rule-based algorithm to perform lung cancer t-stage classification on radiology reports ['Lung - Cancer TNM 8th edition'](http://www.radiologyassistant.nl/en/p58ef5eeb172c8/lung-cancer-tnm-8th-edition.html). 
 
-Supported languages: 
-  - Dutch
-  - English 
+Pre-configured languages are **Dutch** (TN) and **English** (T-only)
   
-- Accuracies
-    - T: trained/validated for English and Dutch with an accuracy of approximately 0.85
-    - N: trained/validated for Dutch with an accuracy of approximately 0.85
-    - M: TODO
+| TNM-8 Lung       | acc. Dutch (n=100)        | acc. English (n=200) |
+| ------------- |:-------------:| -----:|
+| T    |  ~ 0.85 | ~ 0.85 |
+| N      | ~ 0.90     |   TODO |
+| M | TODO      |    TODO |
 
-Mentions containing uncertainty are detected and not used for classification!
-  
-The medstruct applications contains the following services and repositories:
+
+**Mentions containing uncertainty are detected and not used for classification!**
+
+Configuration of synonyms and context is included for English and Dutch, but should always be validated for your site.
+Reported scores are based on the use of a sectionizer, depending on the structure of your reports, a sectionizer has to be reimplemented. 
 
 ### 1. Requirements 
 
@@ -61,7 +62,7 @@ This repository is pre-configured.
  
 Detailed configuration options are described in the repositories of each individual service.
 
-list of services:
+List of services:
 - [maastroclinic/medstruct](https://github.com/maastroclinic/medstruct): pre-processing/management, main-API, text-cleaning, sectionizer, read/write evaluation excel data
 - [putssander/spacy-json-nlp](https://github.com/putssander/spaCy-JSON-NLP): annotate text with spaCy into the JSON-NLP format
 - [maastroclinic/pycontextnlp](https://github.com/maastroclinic/pycontextnlp): JSON-NLP wrapper around pyContextNLP to annotate clinical targets (clinical concepts) and context (negations/uncertainty)
