@@ -42,7 +42,7 @@ Reported scores are based on the use of a sectionizer, depending on the structur
     
 The medstruct user interface will come available at: [http://localhost:8080](http://localhost:8080])
 
-![Alt text](https://raw.githubusercontent.com/putssander/medstruct-gui/master/doc/medstruct_GUI_2020-01-15.png?raw=true "medstruct GUI")
+![Alt text](https://raw.githubusercontent.com/putssander/medstruct-gui/master/doc/MEDSTRUCT-01-15.png?raw=true "medstruct GUI")
 
 
 #### 3.2 Excel Lung TNM-classification
