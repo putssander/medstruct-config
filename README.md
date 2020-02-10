@@ -14,7 +14,7 @@ Supported languages:
 - Accuracies
     - T: trained/validated for English and Dutch with an accuracy of approximately 0.85
     - N: trained/validated for Dutch with an accuracy of approximately 0.85
-    - M: not implemented/feasible based on thorax scans
+    - M: TODO
 
 Mentions containing uncertainty are detected and not used for classification.
   
@@ -33,7 +33,7 @@ The medstruct applications contains the following services and repositories:
     
     docker network create medstruct-network
     
-### 3. Configuration
+### 3. Overview & configuration
 
 This repository is pre-configured.
 - putssander/medstruct-config (THIS repository): configuration repository
@@ -41,14 +41,16 @@ This repository is pre-configured.
 Detailed configuration options are described in the repositories of each individual service.
 
 list of services:
-- [putssander/medstruct](https://github.com/putssander/medstruct): core component, containing read/write excel data, evaluations, text cleaning
-- [putssander/spacy-json-nlp](https://github.com/putssander/spaCy-JSON-NLP): annotate text with spaCy into the json-nlp format
-- [maastrodocker/pycontextnlp](https://github.com/maastroclinic/pycontextnlp): JSON-NLP wrapper around pyContextNLP to annotate clincal targets (clinical entities) and context (negations/uncertainty)
-- [putssander/medstruct-measurement-extractor](https://github.com/putssander/medstruct-measurement-extractractor): extract and link measurements expressions to clinical concepts
+- [putssander/medstruct](https://github.com/putssander/medstruct): pre-processing/management, main-API, text-cleaning, sectionizer, read/write evaluation excel data
+- [putssander/spacy-json-nlp](https://github.com/putssander/spaCy-JSON-NLP): annotate text with spaCy into the JSON-NLP format
+- [maastrodocker/pycontextnlp](https://github.com/maastroclinic/pycontextnlp): JSON-NLP wrapper around pyContextNLP to annotate clinical targets (clinical concepts) and context (negations/uncertainty)
+- [putssander/medstruct-measurement-extractor](https://github.com/putssander/medstruct-measurement-extractractor): extract and link measurement expressions to clinical concepts
 - [putssander/medstruct-tnm-classifier](https://github.com/putssander/medstruct-tnm-classifier): lung classification (tnm-8)
 
-If you want to perform classification on a excel file containg a batch for reports look  [putssander/medstruct](https://github.com/putssander/medstruct)
+![Alt text](https://raw.githubusercontent.com/putssander/medstruct-config/master/doc/tnm-pipeline.png?raw=true "MEDSTRUCT PIPELINE")
 
+
+If you want to perform classification on a excel file containing a batch for reports look  [putssander/medstruct](https://github.com/putssander/medstruct)
 
 ### RUN 
 
