@@ -18,7 +18,7 @@ Pre-configured languages are **Dutch** (TN) and **English** (T-only)
 
 **Mentions containing uncertainty are detected and not used for classification!**
 
-Configuration of synonyms and context is included for English and Dutch, but should always be validated for your site.
+Configuration of synonyms and context is included for English and Dutch, but should always be validated for your corpus.
 Reported scores are based on the use of a sectionizer, depending on the structure of your reports, a sectionizer has to be reimplemented. 
 
 ### 1. Requirements 
@@ -46,6 +46,8 @@ The medstruct user interface will come available at: [http://localhost:8080](htt
 
 
 #### 3.2 Excel Lung TNM-classification
+
+If you want to perform classification on a excel file containing a batch for reports see [maastroclinic/medstruct](https://github.com/maastroclinic/medstruct).
     
 To run the algorithm on an excel sheet.  
    
@@ -57,26 +59,25 @@ To run the algorithm on an excel sheet.
 
 ### 4. Overview & configuration
 
-This repository is pre-configured.
-- putssander/medstruct-config (THIS repository): configuration repository
- 
-Detailed configuration options are described in the repositories of each individual service.
+The MEDSTRUCT pipeline consists out of several reusable components/micro-services with each its own repository. Detailed configuration options are described in the repositories of each individual service.
 
-List of services:
+Overview of MEDSTRUCT repositories/services:
+
+Configuration:
+- [putssander/medstruct-config](https://github.com/putssander/medstruct-config) (this repository): configuration repository.
+ 
+Required components:
 - [maastroclinic/medstruct](https://github.com/maastroclinic/medstruct): pre-processing/management, main-API, text-cleaning, sectionizer, read/write evaluation excel data
 - [putssander/spacy-json-nlp](https://github.com/putssander/spaCy-JSON-NLP): annotate text with spaCy into the JSON-NLP format
 - [maastroclinic/pycontextnlp](https://github.com/maastroclinic/pycontextnlp): JSON-NLP wrapper around pyContextNLP to annotate clinical targets (clinical concepts) and context (negations/uncertainty)
 - [putssander/medstruct-measurement-extractor](https://github.com/putssander/medstruct-measurement-extractractor): extract and link measurement expressions to clinical concepts
 - [putssander/medstruct-tnm-classifier](https://github.com/putssander/medstruct-tnm-classifier): lung classification (tnm-8)
 
-Optional:
+Optional components:
 - [putssander/medstruct-gui](https://github.com/putssander/medstruct-gui): MEDSTRUCT Graphical User Interface
 
 
 ![Alt text](https://raw.githubusercontent.com/putssander/medstruct-config/master/doc/tnm-pipeline.png?raw=true "MEDSTRUCT PIPELINE")
-
-
-If you want to perform classification on a excel file containing a batch for reports look  [putssander/medstruct](https://github.com/putssander/medstruct)
 
 
 ### 5. FAQ
