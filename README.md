@@ -47,6 +47,10 @@ list of services:
 - [putssander/medstruct-measurement-extractor](https://github.com/putssander/medstruct-measurement-extractractor): extract and link measurement expressions to clinical concepts
 - [putssander/medstruct-tnm-classifier](https://github.com/putssander/medstruct-tnm-classifier): lung classification (tnm-8)
 
+Optional:
+- [putssander/medstruct-gui](https://github.com/putssander/medstruct-gui): MEDSTRUCT Graphical User Interface
+
+
 ![Alt text](https://raw.githubusercontent.com/putssander/medstruct-config/master/doc/tnm-pipeline.png?raw=true "MEDSTRUCT PIPELINE")
 
 
