@@ -1,4 +1,4 @@
-# MEDSTRUCT
+# medstruct
 
 Extract structure from medical narrative (Clinical NLP)
     
@@ -42,7 +42,7 @@ Reported scores are based on the use of a sectionizer, depending on the structur
     
 The medstruct user interface will come available at: [http://localhost:8080](http://localhost:8080])
 
-![Alt text](https://raw.githubusercontent.com/putssander/medstruct-gui/master/doc/MEDSTRUCT_GUI_2020-01-15.png?raw=true "MEDSTRUCT GUI")
+![Alt text](https://raw.githubusercontent.com/putssander/medstruct-gui/master/doc/medstruct_GUI_2020-01-15.png?raw=true "medstruct GUI")
 
 
 #### 3.2 Excel Lung TNM-classification
@@ -59,9 +59,9 @@ To run the algorithm on an excel sheet.
 
 ### 4. Overview & configuration
 
-The MEDSTRUCT pipeline consists out of several reusable components/micro-services with each its own repository. Detailed configuration options are described in the repositories of each individual service.
+The medstruct pipeline consists out of several reusable components/micro-services with each its own repository. Detailed configuration options are described in the repositories of each individual service.
 
-Overview of MEDSTRUCT repositories/services:
+Overview of medstruct repositories/services:
 
 Configuration:
 - [putssander/medstruct-config](https://github.com/putssander/medstruct-config) (this repository): configuration repository.
@@ -74,10 +74,10 @@ Required components:
 - [putssander/medstruct-tnm-classifier](https://github.com/putssander/medstruct-tnm-classifier): lung classification (tnm-8)
 
 Optional components:
-- [putssander/medstruct-gui](https://github.com/putssander/medstruct-gui): MEDSTRUCT Graphical User Interface
+- [putssander/medstruct-gui](https://github.com/putssander/medstruct-gui): medstruct Graphical User Interface
 
 
-![Alt text](https://raw.githubusercontent.com/putssander/medstruct-config/master/doc/tnm-pipeline.png?raw=true "MEDSTRUCT PIPELINE")
+![Alt text](https://raw.githubusercontent.com/putssander/medstruct-config/master/doc/tnm-pipeline.png?raw=true "medstruct PIPELINE")
 
 
 ### 5. FAQ
