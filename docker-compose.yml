@@ -2,7 +2,8 @@ version: '3.7'
 
 services:
   medstruct-gui:
-    image: putssander/medstruct-gui:0.0.1-SNAPSHOT
+    image: registry.gitlab.com/medstruct/medstruct-gui:latest
+
     container_name: medstruct-gui
     environment:
     - SPRING_PROFILES_ACTIVE=docker,h2file
@@ -16,7 +17,7 @@ services:
       - "./medstruct-gui:/data"
 
   medstruct-api:
-    image: putssander/medstruct:2.1
+    image: registry.gitlab.com/medstruct/medstruct:2.1
     container_name: medstruct-api
     expose:
     - '8081'
@@ -71,7 +72,7 @@ services:
     - "./pycontextnlp:/data"
 
   medstruct-measurement-extractor:
-    image: putssander/medstruct-measurement-extractor:2.1.0
+    image: registry.gitlab.com/medstruct/medstruct-measurement-extractor:2.1.0
     container_name: medstruct-measurement-extractor
     expose:
     - '5004'
@@ -86,7 +87,7 @@ services:
     - "./medstruct-measurement-extractor:/data"
 
   medstruct-tnm-classifier:
-    image: putssander/medstruct-tnm-classifier:2.2.2
+    image: registry.gitlab.com/medstruct/medstruct-tnm-classifier:2.2.2
     container_name: medstruct-tnm-classifier
     expose:
     - '5005'
