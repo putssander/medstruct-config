@@ -1,8 +1,13 @@
 # NON-Docker installation
 
+## Installation
+
 1. Install [Java 11](https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot)
-2. Install [Python 3.7](https://www.python.org/downloads/)
-3. Install git
+2. Install [Python x64](https://www.python.org/downloads/)
+3. Install Git
+4. Windows Only Install [Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+    Make sure u install MSVC and use "x64 Native Tools Command Prompt for VS 2019" as terminal
+    
 4. Unzip medstruct-manual.zip 
 5. Open medstruct-manual directory and clone the following repositories
 
@@ -19,34 +24,45 @@
         
 7. Install Python packages
 
-8.1 Create and activate venv
-       
-        python3 -m venv medstruct-venv
-        source medstruct-venv/bin/activate
+7.1 Create and activate venv
+
+OSX:   
         
-8.2 Install medstruct
+    $ python3 -m venv medstruct-venv
+    $ source medstruct-venv/bin/activate
+
+Windows:
        
-        pip install -e medstruct
+    $ python -m venv medstruct-venv
+    $ medstruct-venv\Scripts\activate
+      
+7.2 Install Cython
 
-8.3 Install spaCy-JSON-NLP (cython in advance?)
+    $ pip install Cython
+            
+7.3 Install medstruct
+       
+    $ pip install -e medstruct
+
+7.3 Install spaCy-JSON-NLP (numpy has to be set to ==1.14 on Windows)
     
-        cd spaCy-JSON-NLP
-        pip install git+https://github.com/putssander/Py-JSON-NLP.git@json_payload_as_params       
-        python setup.py install
-        python -m spacy download en_core_web_sm
-        python -m spacy download nl_core_news_sm
-        cd ..
+    cd spaCy-JSON-NLP
+    pip install git+https://github.com/putssander/Py-JSON-NLP.git@json_payload_as_params
+    python setup.py install
+    python -m spacy download en_core_web_sm
+    python -m spacy download nl_core_news_sm
+    cd ..
 
-8.4 Install pyContextNLP      
+7.4 Install pyContextNLP      
 
         pip install -e pyConTextNLP
         python -m textblob.download_corpora
 
-9. Boot services using Python run script
+## Run
+
+Boot services using Python run script
         
         source medstruct-venv/bin/activate
         python run.py
 
-10. Stop services
-
-        ctrl + c
+Log files are written in log/
