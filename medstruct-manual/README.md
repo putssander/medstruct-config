@@ -11,8 +11,8 @@
 4. Unzip medstruct-manual.zip 
 5. Open medstruct-manual directory and clone the following repositories
 
-        git clone https://github.com/putssander/medstruct-config.git
-        git clone https://github.com/putssander/medstruct.git
+        git clone https://gitlab.com/medstruct/medstruct-config.git
+        git clone https://gitlab.com/medstruct/medstruct.git
         git clone -b pyjsonnlpmedstruct https://github.com/putssander/spaCy-JSON-NLP.git        
         git clone https://github.com/maastroclinic/pyConTextNLP.git
         
