@@ -60,7 +60,7 @@ Windows:
 
 ## Run
 
-1. Navigate to directory medstruct-config
+1. Navigate to directory medstruct-config/medstruct-manual
 
 2. Activate Python venv:
  
