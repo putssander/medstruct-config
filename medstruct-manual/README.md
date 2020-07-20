@@ -55,14 +55,26 @@ Windows:
 
 7.4 Install pyContextNLP      
 
-        pip install -e pyConTextNLP
-        python -m textblob.download_corpora
+    pip install -e pyConTextNLP
+    python -m textblob.download_corpora
 
 ## Run
 
-Boot services using Python run script
-        
+1. Navigate to directory medstruct-config
+
+2. Activate Python venv:
+ 
+    **OSX**:
+    
         source medstruct-venv/bin/activate
-        python run.py
+    
+    **Windows**
+        
+        medstruct-venv\Scripts\activate
+
+3. Start the run script
+    
+       python run.py
+
 
 Log files are written in log/
