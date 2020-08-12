@@ -68,7 +68,7 @@ medstruct:
   results:
     confusion-matrix-prefix: 'confusion-matrix'
     confusion-matrix-eps: true
-    output-dir: '/Users/sanderputs/DataSets/Result'
+    output-dir: '/data/reports/output.xlsx'
     dump-json-nlp: false
 
 spacy:
