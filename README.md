@@ -55,7 +55,7 @@ To run the algorithm on an excel sheet.
        
    example
    
-       docker run -ti --rm --net medstruct-network -v '/data/reports/t-stage/:/data/' -v ${PWD}/medstruct-application.yml:/app/application.yml putssander/medstruct:2.0 python medstruct/xlsx_run.py /data/t-stage-reports-val-copy.xlsx training-set
+       docker run -ti --rm --net medstruct-network -v ${PWD}/data/:/data/ -v ${PWD}/medstruct/medstruct-application.yml:/app/application.yml registry.gitlab.com/medstruct/medstruct:2.1 python medstruct/xlsx_run.py /data/reports/TNMTest1.xlsx training-set
 
 ### 4. Overview & configuration
 
