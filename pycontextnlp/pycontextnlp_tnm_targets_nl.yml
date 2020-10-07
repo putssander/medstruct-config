@@ -282,7 +282,7 @@ Type: 'none:side-ipsilateral'
 ---
 Comments: ''
 Direction: ''
-Lex: contraleral
+Lex: contralater
 Regex: 'contralater'
 Type: 'none:side-contralateral'
 
