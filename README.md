@@ -57,6 +57,11 @@ To run the algorithm on an excel sheet.
    
        docker run -ti --rm --net medstruct-network -v ${PWD}/data/:/data/ -v ${PWD}/medstruct/medstruct-application.yml:/app/application.yml registry.gitlab.com/medstruct/medstruct:2.1 python medstruct/xlsx_run.py /data/reports/TNMTest1.xlsx training-set
 
+   example 2 (used Zuyderland)
+
+       docker run -ti --rm --net medstruct-network -v ${PWD}/data/:/data/ -v ${PWD}/medstruct/medstruct-application.yml:/app/application.yml registry.gitlab.com/medstruct/medstruct:2.1 python medstruct/xlsx_run.py /data/reports/TNMTest1Zuyderland_TEST50.xlsx training-set
+    
+
 Output can be configured in ${PWD}/medstruct/medstruct-application.yml, example 
     
         medstruct.output-dir: '/data/reports/output.xlsx'
