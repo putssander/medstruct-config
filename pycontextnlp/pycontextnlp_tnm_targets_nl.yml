@@ -285,4 +285,10 @@ Direction: ''
 Lex: contralater
 Regex: 'contralater'
 Type: 'none:side-contralateral'
+---
+Comments: ''
+Direction: ''
+Lex: avide
+Regex: 'avide|verhoogde uptake|hot op|metabool actie'
+Type: 'none:avide'
 
