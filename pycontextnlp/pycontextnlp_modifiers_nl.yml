@@ -3573,7 +3573,7 @@
 ---
   Lex: differentiaal diagnose
   Type: PROBABLE_NEGATED_EXISTENCE
-  Regex: '\b(dd|DD)\b.*toch'
+  Regex: '\b(dd|DD)\b'
   Direction: bidirectional
   Unnamed-4: ""
   Unnamed-5: ""

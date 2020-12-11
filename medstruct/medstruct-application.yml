@@ -22,6 +22,8 @@
 simple-sectionizer:
   regex_whitelist_required:
     - 'thorax:'
+    - 'target laesie'
+    - 'target lesie'
   regex_whitelist_optional:
     - 'conclusie:'
     - 'conclusie'
