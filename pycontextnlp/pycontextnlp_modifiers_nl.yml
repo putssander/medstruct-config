@@ -3570,3 +3570,12 @@
   Unnamed-5: ""
   Unnamed-6: ""
   Codes: ""
+---
+  Lex: differentiaal diagnose
+  Type: PROBABLE_NEGATED_EXISTENCE
+  Regex: '\b(dd|DD)\b.*toch'
+  Direction: bidirectional
+  Unnamed-4: ""
+  Unnamed-5: ""
+  Unnamed-6: ""
+  Codes: ""
