@@ -288,7 +288,7 @@ Type: 'none:side-contralateral'
 ---
 Comments: ''
 Direction: ''
-Lex: avide
+Lex: concept_avide
 Regex: 'avide|verhoogde uptake|hot op|metabool actie'
 Type: 'none:avide'
 
