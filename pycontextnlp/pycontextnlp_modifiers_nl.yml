@@ -3357,7 +3357,7 @@
 ---
   Lex: toename
   Type: HISTORICAL
-  Regex: verhogen|toenemende|verhoogd
+  Regex: verhogen|toenemende
   Direction: bidirectional
   Unnamed-4: ""
   Unnamed-5: ""
@@ -3574,6 +3574,24 @@
   Lex: differentiaal diagnose
   Type: PROBABLE_NEGATED_EXISTENCE
   Regex: '\b(dd|DD)\b'
+  Direction: bidirectional
+  Unnamed-4: ""
+  Unnamed-5: ""
+  Unnamed-6: ""
+  Codes: ""
+---
+  Lex: 'LIMITED_AVIDITY'
+  Type: LIMITED_AVIDITY
+  Regex: 'beperkt|matig|licht|subtiel'
+  Direction: bidirectional
+  Unnamed-4: ""
+  Unnamed-5: ""
+  Unnamed-6: ""
+  Codes: ""
+---
+  Lex: 'SUBSTANTIAL_AVIDITY'
+  Type: SUBSTANTIAL_AVIDITY
+  Regex: 'intens|verhoogd|extre|veel|actief|substati.{1}l'
   Direction: bidirectional
   Unnamed-4: ""
   Unnamed-5: ""
