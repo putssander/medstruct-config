@@ -88,8 +88,14 @@ Optional components:
 
 ![Alt text](https://raw.githubusercontent.com/putssander/medstruct-config/master/doc/tnm-pipeline.png?raw=true "medstruct PIPELINE")
 
+### 5. Docker Development
 
-### 5. FAQ
+To set up a development environment, where docker-compose applications communicate with applications running on your host.
+For the applications you want to run on your host machine (for development):
+  - In docker-compose.yml place the services in comment 
+  - In ./medstruct/medstruct-application.yml set the hostname to host.docker.internal
+
+### 6. FAQ
 
 - "not a directory"
 

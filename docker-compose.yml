@@ -42,7 +42,7 @@ services:
     - medstruct-network
 
   pycontext-json-nlp-medstruct-en:
-    image: maastrodocker/pycontextnlp:latest
+    image: maastrodocker/pycontextnlp:1.1.0
     container_name: pycontext-json-nlp-medstruct-en
     environment:
     - MODIFIERS=/data/pycontextnlp_modifiers_en.yml
@@ -57,7 +57,7 @@ services:
     - "./pycontextnlp:/data"
 
   pycontext-json-nlp-medstruct-nl:
-    image: maastrodocker/pycontextnlp:latest
+    image: maastrodocker/pycontextnlp:1.1.0
     container_name: pycontext-json-nlp-medstruct-nl
     environment:
     - MODIFIERS=/data/pycontextnlp_modifiers_nl.yml
@@ -87,7 +87,7 @@ services:
     - "./medstruct-measurement-extractor:/data"
 
   medstruct-tnm-classifier:
-    image: registry.gitlab.com/medstruct/medstruct-tnm-classifier:2.3.0
+    image: registry.gitlab.com/medstruct/medstruct-tnm-classifier:2.3.1
     container_name: medstruct-tnm-classifier
     expose:
     - '5005'
