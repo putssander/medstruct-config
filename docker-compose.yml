@@ -48,7 +48,7 @@ services:
     - MODIFIERS=/data/pycontextnlp_modifiers_en.yml
     - TARGETS=/data/pycontextnlp_tnm_targets_en.yml
     expose:
-    - '5503'
+    - '5003'
     ports:
     - '5530:5003'
     networks:
@@ -75,7 +75,7 @@ services:
     image: registry.gitlab.com/medstruct/medstruct-measurement-extractor:2.1.0
     container_name: medstruct-measurement-extractor
     expose:
-    - '5504'
+    - '5004'
     ports:
     - '5504:5004'
     environment:
@@ -90,7 +90,7 @@ services:
     image: registry.gitlab.com/medstruct/medstruct-tnm-classifier:2.3.1
     container_name: medstruct-tnm-classifier
     expose:
-    - '5505'
+    - '5005'
     ports:
     - '5505:5005'
     environment:
