@@ -34,7 +34,7 @@ services:
     expose:
     - '5001'
     ports:
-    - '5001:5001'
+    - '5501:5001'
     environment:
     - COREFERENCES=false
     - CONSTITUENTS=false
@@ -48,9 +48,9 @@ services:
     - MODIFIERS=/data/pycontextnlp_modifiers_en.yml
     - TARGETS=/data/pycontextnlp_tnm_targets_en.yml
     expose:
-    - '5003'
+    - '5503'
     ports:
-    - '5030:5003'
+    - '5530:5003'
     networks:
     - medstruct-network
     volumes:
@@ -63,9 +63,9 @@ services:
     - MODIFIERS=/data/pycontextnlp_modifiers_nl.yml
     - TARGETS=/data/pycontextnlp_tnm_targets_nl.yml
     expose:
-    - '5003'
+    - '5503'
     ports:
-    - '5031:5003'
+    - '5531:5003'
     networks:
     - medstruct-network
     volumes:
@@ -75,9 +75,9 @@ services:
     image: registry.gitlab.com/medstruct/medstruct-measurement-extractor:2.1.0
     container_name: medstruct-measurement-extractor
     expose:
-    - '5004'
+    - '5504'
     ports:
-    - '5004:5004'
+    - '5504:5004'
     environment:
     - SPRING_PROFILES_ACTIVE=rest
     - SPRING_CONFIG_LOCATION=/data/medstruct-measurement-extractor-application-nl.yml
@@ -90,9 +90,9 @@ services:
     image: registry.gitlab.com/medstruct/medstruct-tnm-classifier:2.3.1
     container_name: medstruct-tnm-classifier
     expose:
-    - '5005'
+    - '5505'
     ports:
-    - '5005:5005'
+    - '5505:5005'
     environment:
     - SPRING_PROFILES_ACTIVE=rest
     - SPRING_CONFIG_LOCATION=/data/medstruct-tnm-classifier-application-nl.yml

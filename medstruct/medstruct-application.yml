@@ -78,20 +78,20 @@ spacy:
     "en": "en_core_web_sm"
     "nl": "nl_core_news_sm"
 #  url: 'http://localhost:5001/token_list'
-  url: 'http://spacy-json-nlp-medstruct:5001/token_list'
+  url: 'http://spacy-json-nlp-medstruct:5501/token_list'
 
 pycontextnlp:
   url-lang-map:
 #    "en": 'http://localhost:5030/json-nlp'
 #    "nl": 'http://localhost:5031/json-nlp'
-    "en": 'http://pycontext-json-nlp-medstruct-en:5003/json-nlp'
-    "nl": 'http://pycontext-json-nlp-medstruct-nl:5003/json-nlp'
+    "en": 'http://pycontext-json-nlp-medstruct-en:5503/json-nlp'
+    "nl": 'http://pycontext-json-nlp-medstruct-nl:5503/json-nlp'
 
 
 medstruct-measurement-extractor:
 #  url: 'http://localhost:5004/api/json-nlp/measurements'
-  url: 'http://medstruct-measurement-extractor:5004/api/json-nlp/measurements'
+  url: 'http://medstruct-measurement-extractor:5504/api/json-nlp/measurements'
 
 medstruct-tnm-client:
 # url: 'http://localhost:5005/api/classify/tnm/lung8/jsonlp'
-  url: 'http://medstruct-tnm-classifier:5005/api/classify/tnm/lung8/jsonlp'
+  url: 'http://medstruct-tnm-classifier:5505/api/classify/tnm/lung8/jsonlp'
