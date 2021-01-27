@@ -73,13 +73,13 @@ Type: 'none:thorax-station-2'
 Comments: ''
 Direction: ''
 Lex: thorax-station-3a
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?(3|III\b|Ⅲ)a|pre-{0,1}\s?vasculair'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?(3|III\b|Ⅲ)\s?a|pre-{0,1}\s?vasculair'
 Type: 'none:thorax-station-3a'
 ---
 Comments: ''
 Direction: ''
 Lex: thorax-station-3p
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?(3|III\b|Ⅲ)p|pre-{0,1}\s?vertrebra'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?(3|III\b|Ⅲ)\s?p|pre-{0,1}\s?vertrebra'
 Type: 'none:thorax-station-3p'
 ---
 Comments: ''
@@ -121,7 +121,7 @@ Type: 'none:thorax-station-9'
 Comments: ''
 Direction: ''
 Lex: main_bronchus
-Regex: '(centrale|hoofd|hilair|hilaire)/s?bronch'
+Regex: '(centrale|hoofd|hilair|hilaire)\s?bronch'
 Type: 'snomedct:102297006'
 ---
 Comments: ''
