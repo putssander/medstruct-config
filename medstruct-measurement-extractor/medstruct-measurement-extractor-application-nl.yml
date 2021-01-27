@@ -30,6 +30,11 @@ measurement-extractor:
       preceding-concept: "snomedct:3711007" #oarta
       quantity: "LENGTH"
       sub-quantity: "DIMENSION"
+    - code: "none:plural_liquid" #pleural liquid size
+      unit: "cm"
+      preceding-concept: "snomedct:2778004" #pleuravocht
+      quantity: "LENGTH"
+      sub-quantity: "DIMENSION"
 
   quantity-subtypes:
     - subtype: "DISTANCE"

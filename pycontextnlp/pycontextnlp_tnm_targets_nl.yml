@@ -85,7 +85,7 @@ Type: 'none:thorax-station-3p'
 Comments: ''
 Direction: ''
 Lex: thorax-station-4
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(4|IV\b|Ⅳ)|para-{0,1}\s?trachea|mediastinale (?=(lymf|klier|adenopat|patholo|vergro))|mediastinaal (?=(lymf|klier|adenopat|patholo|vergro))|((?<=klier)|(?<=klieren)) mediastinaal|\b4\s?(?=(r\b|R\b|rechts|l\b|L\b|links))'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(4|IV\b|Ⅳ)|para-{0,1}\s?trachea|mediastina(al|le) (?=(lymf|klier|adenopat|patholo|vergro))|mediastina(al|le) (?=(lymf|klier|adenopat|patholo|vergro))|(?<=klier) mediastina(al|le)|(?<=klieren) mediastina(al|le)|\b4\s?(?=(r\b|R\b|rechts|l\b|L\b|links))'
 Type: 'none:thorax-station-4'
 ---
 Comments: ''
@@ -291,3 +291,9 @@ Direction: ''
 Lex: concept_avide
 Regex: 'avide|avidit|hot op|metabool|uptake|captatie'
 Type: 'none:avide'
+---
+Comments: ''
+Direction: ''
+Lex: pleura_vocht
+Regex: 'pleuravocht'
+Type: 'snomedct:2778004'

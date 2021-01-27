@@ -3591,7 +3591,7 @@
 ---
   Lex: 'SUBSTANTIAL_AVIDITY'
   Type: SUBSTANTIAL_AVIDITY
-  Regex: 'intens|verhoogd|extre|veel|actief|substati.{1}l'
+  Regex: 'intens|verhoogd|extre|veel|actie(v|f)|substati.{1}l'
   Direction: bidirectional
   Unnamed-4: ""
   Unnamed-5: ""
