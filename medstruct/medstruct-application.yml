@@ -93,5 +93,6 @@ medstruct-measurement-extractor:
   url: 'http://medstruct-measurement-extractor:5004/api/json-nlp/measurements'
 
 medstruct-tnm-client:
-# url: 'http://localhost:5005/api/classify/tnm/lung8/jsonlp'
+  # url: 'http://localhost:5005/api/classify/tnm/lung8/jsonlp'
+  # url: 'http://host.docker.internal:5005/api/classify/tnm/lung8/jsonlp'
   url: 'http://medstruct-tnm-classifier:5005/api/classify/tnm/lung8/jsonlp'
