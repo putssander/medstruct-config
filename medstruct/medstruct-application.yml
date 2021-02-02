@@ -39,6 +39,10 @@ preprocessor:
   replace-punctuations:
     ":": ""
     "-": " "
+    "linker": "linker "
+    "rechter": "rechter "
+    "rechts" : "rechts "
+    "links" : "links "
 
 tnm-classification:
   xlsx-result-columns:

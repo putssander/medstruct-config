@@ -91,7 +91,7 @@ Type: 'none:thorax-station-4'
 Comments: ''
 Direction: ''
 Lex: thorax-station-5
-Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(5|V\b|Ⅴ)|sub-{0,1}\s?aortaal|(AP|aorta-{0,1}\s?pulmona)-{0,1}\s?(window|venster)'
+Regex: '((?<=station)|(?<=level)|(?<=regio)|(?<=zone))s?\s?\b(5|V\b|Ⅴ)|sub-{0,1}\s?aortaal|(AP|aort-{0,1}\s?pulmona)-{0,1}\s?(window|venster)'
 Type: 'none:thorax-station-5'
 ---
 Comments: ''
