@@ -3,7 +3,6 @@ version: '3.7'
 services:
   medstruct-gui:
     image: registry.gitlab.com/medstruct/medstruct-gui:latest
-
     container_name: medstruct-gui
     environment:
     - SPRING_PROFILES_ACTIVE=docker,h2file
