@@ -3517,9 +3517,9 @@
   Unnamed-6: ""
   Codes: ""
 ---
-  Lex: 'geringe'
+  Lex: 'gering'
   Type: LIMITED_AMOUNT
-  Regex: 'geringe'
+  Regex: 'gering'
   Direction: forward
   Unnamed-4: ""
   Unnamed-5: ""

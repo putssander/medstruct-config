@@ -289,7 +289,7 @@ Type: 'none:side-contralateral'
 Comments: ''
 Direction: ''
 Lex: concept_avide
-Regex: 'avide|avidit|hot op|metabool|uptake|captatie'
+Regex: 'avide|avidit|hot op|metabool|uptake|captatie|stapeling'
 Type: 'none:avide'
 ---
 Comments: ''
@@ -297,3 +297,9 @@ Direction: ''
 Lex: pleura_vocht
 Regex: 'pleuravocht'
 Type: 'snomedct:2778004'
+---
+Comments: ''
+Direction: ''
+Lex: schildikte
+Regex: 'schildikte'
+Type: 'none:schildikte'

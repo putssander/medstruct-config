@@ -35,6 +35,12 @@ measurement-extractor:
       preceding-concept: "snomedct:2778004" #pleuravocht
       quantity: "LENGTH"
       sub-quantity: "DIMENSION"
+    - code:  "none:schildikte-dim"
+      unit: "cm"
+      preceding-concept: "none:schildikte"
+      quantity: "LENGTH"
+      sub-quantity: "DIMENSION"
+     
 
   quantity-subtypes:
     - subtype: "DISTANCE"

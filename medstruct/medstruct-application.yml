@@ -38,11 +38,9 @@ preprocessor:
     "ca.": "circa"
   replace-punctuations:
     ":": ""
-    "-": " "
-    "linker": "linker "
-    "rechter": "rechter "
-    "rechts" : "rechts "
-    "links" : "links "
+    "-": ","
+    "linker": "linker+"
+    "rechter": "rechter+"
 
 tnm-classification:
   xlsx-result-columns:
