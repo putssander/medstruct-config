@@ -86,20 +86,20 @@ services:
     volumes:
     - "./medstruct-measurement-extractor:/data"
 
-  medstruct-tnm-classifier:
-    image: registry.gitlab.com/medstruct/medstruct-tnm-classifier:2.3.1
-    container_name: medstruct-tnm-classifier
-    expose:
-    - '5005'
-    ports:
-    - '5505:5005'
-    environment:
-    - SPRING_PROFILES_ACTIVE=rest
-    - SPRING_CONFIG_LOCATION=/data/medstruct-tnm-classifier-application-nl.yml
-    networks:
-    - medstruct-network
-    volumes:
-    - "./medstruct-tnm-classifier:/data"
+   medstruct-tnm-classifier:
+     image: registry.gitlab.com/medstruct/medstruct-tnm-classifier:2.3.2
+     container_name: medstruct-tnm-classifier
+     expose:
+     - '5005'
+     ports:
+     - '5505:5005'
+     environment:
+     - SPRING_PROFILES_ACTIVE=rest
+     - SPRING_CONFIG_LOCATION=/data/medstruct-tnm-classifier-application-nl.yml
+     networks:
+     - medstruct-network
+     volumes:
+     - "./medstruct-tnm-classifier:/data"
 
 networks:
   medstruct-network:
