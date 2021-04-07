@@ -41,7 +41,7 @@ services:
     - medstruct-network
 
   pycontext-json-nlp-medstruct-en:
-    image: maastrodocker/pycontextnlp:1.1.0
+    image: maastrodocker/pycontextnlp:1.1.1
     container_name: pycontext-json-nlp-medstruct-en
     environment:
     - MODIFIERS=/data/pycontextnlp_modifiers_en.yml
@@ -56,7 +56,7 @@ services:
     - "./pycontextnlp:/data"
 
   pycontext-json-nlp-medstruct-nl:
-    image: maastrodocker/pycontextnlp:1.1.0
+    image: maastrodocker/pycontextnlp:1.1.1
     container_name: pycontext-json-nlp-medstruct-nl
     environment:
     - MODIFIERS=/data/pycontextnlp_modifiers_nl.yml
