@@ -86,7 +86,7 @@ services:
     - "./medstruct-measurement-extractor:/data"
 
   medstruct-tnm-classifier:
-    image: registry.gitlab.com/medstruct/medstruct-tnm-classifier:2.3.2
+    image: registry.gitlab.com/medstruct/medstruct-tnm-classifier:2.3.3
     container_name: medstruct-tnm-classifier
     expose:
     - '5005'
